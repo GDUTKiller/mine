@@ -1,0 +1,1190 @@
+[ 2017-03-23T10:08:26+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-23T10:38:51+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-03-23T10:41:57+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1364:Field 'expires_at' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `captchas` (`mobile`,`captcha`) VALUES ('13265143154','700929')
+ERR: 1364:Field 'expires_at' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `captchas` (`mobile`,`captcha`) VALUES ('13265143154','700929')
+
+[ 2017-03-23T10:45:15+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-23T10:48:23+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-23T10:48:56+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-23T10:49:23+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `captchas` (`mobile`,`created_time`,`expires_at`,`status`,`captcha`) VALUES ('13265143154','20170323104922','20170323105422','1','548724') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:50:50+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-23T10:53:53+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:55:36+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1062:Duplicate entry '2' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `captchas` (`id`,`mobile`,`captcha`,`expires_at`,`status`,`created_time`) VALUES ('2','13265143154','548724','2017-03-23 10:54:22','1','2017-03-23 10:49:22')
+ERR: 1062:Duplicate entry '2' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `captchas` (`id`,`mobile`,`captcha`,`expires_at`,`status`,`created_time`) VALUES ('2','13265143154','548724','2017-03-23 10:54:22','1','2017-03-23 10:49:22')
+
+[ 2017-03-23T10:55:54+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `captchas` SET `mobile`='13265143154',`captcha`='548724',`expires_at`='2017-03-23 10:54:22',`status`='1',`created_time`='2017-03-23 10:49:22' WHERE `id` = 2 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T10:56:42+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-23T10:56:53+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `captchas` SET `mobile`='13265143154',`captcha`='548724',`expires_at`='2017-03-23 10:54:22',`status`='1',`created_time`='2017-03-23 10:49:22' WHERE `id` = 2 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:06:54+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-23T11:07:23+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-23T11:26:30+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-23T11:26:47+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-23T11:27:17+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-23T11:27:58+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-23T11:34:01+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2017-03-23T11:34:45+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `captchas` (`mobile`,`created_time`,`expires_at`,`status`,`captcha`) VALUES ('18826136974','20170323113445','20170323113945','0','970168') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:35:26+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-23T11:35:38+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:35:41+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-23T11:36:04+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:36:59+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-23T11:37:08+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-23T11:37:35+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:39:16+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `captchas` SET `mobile`='13265143154',`created_time`='20170323113915',`expires_at`='20170323114415',`status`='0',`captcha`='076764' WHERE `mobile` = '13265143154' [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:39:19+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-23T11:41:04+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `captchas` SET `mobile`='13265143154',`created_time`='20170323114104',`expires_at`='20170323114604',`status`='0',`captcha`='681954' WHERE `mobile` = '13265143154' [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:44:26+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `captchas` SET `mobile`='13265143154',`created_time`='20170323114426',`expires_at`='20170323114926',`status`='0',`captcha`='748185' WHERE `mobile` = '13265143154' [ RunTime:0.0000s ]
+
+[ 2017-03-23T11:44:33+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-23T11:44:40+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-23T11:45:38+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '13265143154' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `captchas` SET `mobile`='13265143154',`created_time`='20170323114538',`expires_at`='20170323115038',`status`='0',`captcha`='920475' WHERE `mobile` = '13265143154' [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T11:45:55+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `captchas` (`mobile`,`created_time`,`expires_at`,`status`,`captcha`) VALUES ('15521100472','20170323114555','20170323115055','0','256193') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-23T11:47:22+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-23T11:47:40+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-23T11:50:03+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `captchas` (`mobile`,`created_time`,`expires_at`,`status`,`captcha`) VALUES ('15521100472','20170323115003','20170323115503','0','592934') [ RunTime:0.0000s ]
+
+[ 2017-03-23T11:51:40+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-23T11:52:10+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-23T11:52:35+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-23T11:53:58+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `captchas` (`mobile`,`created_time`,`expires_at`,`status`,`captcha`) VALUES ('15521100472','20170323115356','20170323115856','0','912487') [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T12:38:52+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `captchas` SET `mobile`='15521100472',`created_time`='20170323123851',`expires_at`='20170323124351',`status`='0',`captcha`='432537' WHERE `mobile` = '15521100472' [ RunTime:0.0000s ]
+
+[ 2017-03-23T13:12:29+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `captchas` SET `mobile`='15521100472',`created_time`='20170323131229',`expires_at`='20170323131729',`status`='0',`captcha`='612740' WHERE `mobile` = '15521100472' [ RunTime:0.0010s ]
+
+[ 2017-03-23T13:12:34+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521100472' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-23T14:29:58+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:1
+
+[ 2017-03-23T14:30:46+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:1
+
+[ 2017-03-23T14:31:32+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:1
+
+[ 2017-03-23T14:32:05+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:1
+
+[ 2017-03-23T14:32:10+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:1
+
+[ 2017-03-23T14:34:50+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-23T14:37:07+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 C:\wamp64\www\mine\ThinkPHP\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT `name`,`mobile` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-23T14:37:49+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 1 C:\wamp64\www\mine\ThinkPHP\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SELECT `name`,`mobile` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-23T14:40:58+08:00 ] ::1 /mine/index.php/Home/users/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 1 C:\wamp64\www\mine\ThinkPHP\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT `name`,`mobile` FROM `users` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-23T20:13:38+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+
+[ 2017-03-23T20:14:18+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+
+[ 2017-03-23T20:21:27+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-23T20:26:22+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-23T21:38:27+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+ERR: 1054:Unknown column 'avatar' in 'field list'
+ [ SQL语句 ] : SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1  
+ERR: 1054:Unknown column 'avatar' in 'field list'
+ [ SQL语句 ] : SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1  
+
+[ 2017-03-23T21:39:37+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-23T21:47:42+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 78 行.
+NOTIC: [8] Undefined index: avatar C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 78 行.
+SQL: UPDATE `users` SET `avatar`='/Uploads/' WHERE ( id=5 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:49:17+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: avatar C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 78 行.
+NOTIC: [8] Undefined index: avatar C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 78 行.
+SQL: UPDATE `users` SET `avatar`='/Uploads/' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:49:31+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d26bdcbc1.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:50:26+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d2a25c5ce.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:51:17+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d2d525f77.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:51:30+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d2e24bbde.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:52:22+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 75 行.
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d316a8d9c.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:55:19+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] file_exists() expects parameter 1 to be a valid path, array given C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 75 行.
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d3c7b5ee3.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:55:50+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 75 行.
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d3e6adc24.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:56:06+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 75 行.
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d3f659684.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2017-03-23T21:56:26+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 76 行.
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d40a17db4.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:56:42+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 76 行.
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d41adf3e8.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:57:16+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d43c54f4b.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:57:35+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='Uploads/2017-03-23/58d3d44f2cd82.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:57:41+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='Uploads/2017-03-23/58d3d455a4566.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T21:59:19+08:00 ] ::1 /mine/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-23T21:59:19+08:00 ] ::1 /mine/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-23T22:01:55+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d553a1474.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T22:01:56+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d554a70ae.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T22:03:47+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d5c37bbe5.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T22:03:49+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0156s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d5c549106.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T22:03:51+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d5c778235.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T22:04:54+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d606c1ab8.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T22:05:02+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d60ed2a0c.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T22:05:06+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3d6129694a.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T22:44:46+08:00 ] ::1 /mine/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-23T22:47:23+08:00 ] ::1 /mine/index.php/Home/avatar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3dffbab3e3.jpg' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-23T22:48:41+08:00 ] ::1 /mine/index.php/Home/avatars
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\wamp64\www\mine\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SELECT `avatar` FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `avatar`='/Uploads/2017-03-23/58d3e049b88c1.jpg' WHERE `id` = 1 [ RunTime:0.0010s ]
+

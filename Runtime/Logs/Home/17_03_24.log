@@ -1,0 +1,1140 @@
+[ 2017-03-24T07:51:08+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:1
+
+[ 2017-03-24T07:51:16+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-24T07:52:10+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T07:52:38+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-24T07:52:41+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T07:53:03+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-24T07:53:16+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T07:54:11+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T07:57:16+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T07:57:25+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-24T07:57:30+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-24T07:57:36+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T07:57:48+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T07:57:49+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T07:58:08+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-24T07:58:21+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:10:04+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:23:13+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:23:27+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-24T08:26:51+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:27:17+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:27:25+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-24T08:27:39+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-24T08:28:19+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:28:25+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+
+[ 2017-03-24T08:29:08+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:29:51+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+
+[ 2017-03-24T08:31:51+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-24T08:32:10+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:32:45+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:33:34+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-24T08:33:39+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:33:56+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-24T08:34:12+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:35:26+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-24T08:35:33+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:35:36+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:35:40+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:35:53+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:38:14+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+
+[ 2017-03-24T08:40:21+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+
+[ 2017-03-24T08:40:34+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-24T08:40:40+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+
+[ 2017-03-24T08:40:44+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:40:49+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+
+[ 2017-03-24T08:40:54+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+
+[ 2017-03-24T08:46:51+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+
+[ 2017-03-24T08:46:57+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+
+[ 2017-03-24T08:47:04+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:50:52+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 267 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:51:47+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:52:54+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: UPDATE `users` SET `name`='yangjile',`sex`='male',`birthday`='1994-01-21' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-24T08:53:06+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: UPDATE `users` SET `name`='yangjile',`sex`='female',`birthday`='1994-01-21' WHERE `id` = 1 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T08:53:17+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: UPDATE `users` SET `name`='yangjile',`sex`='male',`birthday`='1994-01-21' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T09:03:05+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 38 行.
+
+[ 2017-03-24T09:03:44+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 38 行.
+
+[ 2017-03-24T09:04:00+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `name`='yangjile',`sex`='male',`birthday`='1994-01-21' WHERE `id` = 1 [ RunTime:0.0010s ]
+
+[ 2017-03-24T09:08:58+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:09:28+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:09:39+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT `captcha` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:09:39+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-24T09:09:40+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:09:52+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+
+[ 2017-03-24T09:10:19+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:11:42+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:12:34+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:21:44+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T09:22:00+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:22:49+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'captcha' at row 1
+ [ SQL语句 ] : UPDATE `captchas` SET `mobile`='18826136974',`captcha`='09174726388120653549',`created_time`='20170324092249',`expires_at`='20170324092749',`status`='0' WHERE `mobile` = '18826136974'
+ERR: 1406:Data too long for column 'captcha' at row 1
+ [ SQL语句 ] : UPDATE `captchas` SET `mobile`='18826136974',`captcha`='09174726388120653549',`created_time`='20170324092249',`expires_at`='20170324092749',`status`='0' WHERE `mobile` = '18826136974'
+
+[ 2017-03-24T09:25:11+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `captchas` SET `mobile`='18826136974',`created_time`='20170324092509',`expires_at`='20170324093009',`status`='0',`captcha`='890740' WHERE `mobile` = '18826136974' [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:25:42+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-24T09:25:54+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:25:59+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:26:03+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:26:28+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `captchas` SET `mobile`='18826136974',`created_time`='20170324092628',`expires_at`='20170324093128',`status`='0',`captcha`='348152' WHERE `mobile` = '18826136974' [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:27:19+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-24T09:27:39+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+ERR: Think\Model:encPass方法不存在！
+
+[ 2017-03-24T09:28:27+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT `captcha`,`expires_at` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `password`='e1bf2b97be7264584f3d80f62218b32e',`salt`='inZsjtvM' WHERE `id` = 1 [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:28:44+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:28:49+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T09:34:08+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T20:23:06+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:23:21+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:23:47+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:24:15+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-24T20:26:14+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-24T20:26:21+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:27:00+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:27:57+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:28:51+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `captchas` SET `status`='1' WHERE `mobile` = '18826136974' [ RunTime:0.0000s ]
+SQL: UPDATE `users` SET `password`='893aaa57cc80484bf3b2cf13931b3bd7',`salt`='4CErSMTQ' WHERE `id` = 1 [ RunTime:0.0010s ]
+
+[ 2017-03-24T20:29:13+08:00 ] ::1 /mine/index.php/Home/users/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:29:27+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:29:32+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:36:49+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1406:Data too long for column 'captcha' at row 1
+ [ SQL语句 ] : INSERT INTO `captchas` (`mobile`,`captcha`,`created_time`,`expires_at`,`status`) VALUES ('15521235795','40689135965218430727','20170324203649','20170324204149','0')
+ERR: 1406:Data too long for column 'captcha' at row 1
+ [ SQL语句 ] : INSERT INTO `captchas` (`mobile`,`captcha`,`created_time`,`expires_at`,`status`) VALUES ('15521235795','40689135965218430727','20170324203649','20170324204149','0')
+
+[ 2017-03-24T20:37:02+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `captchas` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `captchas` (`mobile`,`created_time`,`expires_at`,`status`,`captcha`) VALUES ('15521235795','20170324203701','20170324204201','0','302740') [ RunTime:0.0010s ]
+
+[ 2017-03-24T20:38:21+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-24T20:39:45+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-24T20:40:02+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:41:22+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:44:24+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:45:23+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+SQL: SELECT `captcha`,`expires_at`,`status` FROM `captchas` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `captchas` SET `status`='1' WHERE `mobile` = '15521235795' [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `users` (`mobile`,`password`,`name`,`sex`,`birthday`,`salt`) VALUES ('15521235795','c67695e34f77ed55735ea6489a1def7d','yangjile','male','1994-01-21','Ka4fzSDs') [ RunTime:0.0010s ]
+
+[ 2017-03-24T20:47:01+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-24T20:47:04+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '15521235795' LIMIT 1   [ RunTime:0.0000s ]
+

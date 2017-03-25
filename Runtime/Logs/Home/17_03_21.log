@@ -1,0 +1,2915 @@
+[ 2017-03-21T09:05:30+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `users` WHERE `name` = 'jlk' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T09:13:42+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `users` WHERE `name` = 'jlk' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T11:02:40+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `users` WHERE `name` = '杨己乐' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T11:03:38+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T11:04:50+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T11:05:17+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T11:07:21+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:07:22+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:08:12+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:08:13+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:08:13+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:08:13+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:08:13+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:08:27+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T11:08:33+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:08:47+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:11:14+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:11:15+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:12:38+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): No ending delimiter '/' found C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:13:05+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:13:06+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:13:06+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:13:07+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:13:07+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:13:07+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:13:50+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T11:13:59+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T11:13:59+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T11:14:00+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T11:14:00+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T11:16:40+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T11:16:51+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T11:17:21+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T11:19:55+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\mine\Home\Controller\UsersController.class.php:34) C:\wamp64\www\mine\ThinkPHP\Library\Think\Controller\RestController.class.php 第 178 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\mine\Home\Controller\UsersController.class.php:34) C:\wamp64\www\mine\ThinkPHP\Library\Think\Controller\RestController.class.php 第 180 行.
+
+[ 2017-03-21T11:20:08+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T11:20:17+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\mine\Home\Controller\UsersController.class.php:34) C:\wamp64\www\mine\ThinkPHP\Library\Think\Controller\RestController.class.php 第 178 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\mine\Home\Controller\UsersController.class.php:34) C:\wamp64\www\mine\ThinkPHP\Library\Think\Controller\RestController.class.php 第 180 行.
+
+[ 2017-03-21T11:24:36+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T11:25:12+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T11:32:29+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T11:33:42+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T11:39:20+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `users` (`mobile`,`password`,`name`,`salt`) VALUES ('18826136974','8437e78fbd2c2d7e4141bcdd5104fbef','yangjile','fMnCUzqx') [ RunTime:0.0020s ]
+
+[ 2017-03-21T11:40:08+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T14:57:24+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '18826136974' for key 'mobile'
+ [ SQL语句 ] : INSERT INTO `users` (`mobile`,`password`,`name`,`salt`) VALUES ('18826136974','5005dc0e97bfa0dd860fe0eba5300c39','yangjile','0nHFWYKr')
+ERR: 1062:Duplicate entry '18826136974' for key 'mobile'
+ [ SQL语句 ] : INSERT INTO `users` (`mobile`,`password`,`name`,`salt`) VALUES ('18826136974','5005dc0e97bfa0dd860fe0eba5300c39','yangjile','0nHFWYKr')
+
+[ 2017-03-21T14:58:00+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `users` (`mobile`,`password`,`name`,`salt`) VALUES ('18826136975','3cca3bdfb46fbdd0f676e282ebcadb00','yangjile','HJ81PkSv') [ RunTime:0.0010s ]
+
+[ 2017-03-21T14:58:05+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: 1062:Duplicate entry '18826136975' for key 'mobile'
+ [ SQL语句 ] : INSERT INTO `users` (`mobile`,`password`,`name`,`salt`) VALUES ('18826136975','3790d2439e70572cc8b7b63b1df9f5ce','yangjile','0fH9vMVG')
+ERR: 1062:Duplicate entry '18826136975' for key 'mobile'
+ [ SQL语句 ] : INSERT INTO `users` (`mobile`,`password`,`name`,`salt`) VALUES ('18826136975','3790d2439e70572cc8b7b63b1df9f5ce','yangjile','0fH9vMVG')
+
+[ 2017-03-21T15:02:22+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `name` = 'yangjile' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:02:52+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:02:53+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:02:54+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:02:54+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:02:54+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:04:36+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:05:34+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:45+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:55+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:55+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:55+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:55+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:56+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:56+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:56+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:56+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:56+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:57+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:57+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:57+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:58+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:58+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:58+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:58+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:58+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:59+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:05:59+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:06:00+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:06:00+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:06:00+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:07:06+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:07:34+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1117 行.
+
+[ 2017-03-21T15:08:43+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:08:44+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:08:44+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:08:45+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:08:45+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:08:45+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:08:46+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136976' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:13:19+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:13:20+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:15:36+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:15:58+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:16:34+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:16:46+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:16:54+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:16:54+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:16:55+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:17:11+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T15:17:12+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T15:18:08+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-03-21T15:20:03+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-21T15:20:10+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T15:20:40+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T15:20:40+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T15:20:41+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T15:20:52+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T15:20:53+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T15:20:53+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T15:21:14+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T18:00:00+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T18:01:47+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: PCRE does not support \L, \l, \N{name}, \U, or \u at offset 3 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T18:56:15+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] preg_match(): Compilation failed: character value in \x{} or \o{} is too large at offset 9 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T18:56:44+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Compilation failed: character value in \x{} or \o{} is too large at offset 9 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T18:56:44+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] preg_match(): Compilation failed: character value in \x{} or \o{} is too large at offset 9 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T18:56:45+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] preg_match(): Compilation failed: character value in \x{} or \o{} is too large at offset 9 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T18:56:45+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): Compilation failed: character value in \x{} or \o{} is too large at offset 9 C:\wamp64\www\mine\Home\Controller\UsersController.class.php 第 32 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-21T19:00:11+08:00 ] ::1 /mine/index.php/Home/users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T19:24:39+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:25:33+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:26:27+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:27:29+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:27:50+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:27:59+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:29:37+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:30:20+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:30:21+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:06+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:07+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:07+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:08+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:09+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:10+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:10+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:11+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:11+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:12+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:12+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:13+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:13+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:13+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:14+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:14+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:14+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:15+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:28+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:29+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:30+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:30+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:46+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:46+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:47+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:48+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:48+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:48+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:49+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:49+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:32:49+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:01+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:01+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:01+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:02+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:02+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:02+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:02+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:02+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:03+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:03+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:03+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:03+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:04+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:04+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:04+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:04+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:05+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:05+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:05+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:33:05+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:14+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:32+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:33+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:34+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:34+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:35+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:37+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:37+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:38+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:38+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:39+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:39+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:36:40+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:37:19+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:37:20+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:37:20+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:37:21+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:40:21+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:40:28+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:40:37+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:44:53+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:44:54+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:44:55+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-21T19:45:14+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T19:45:15+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T19:45:15+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T19:46:00+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T19:46:56+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE ( name=18826136979 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T19:47:34+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE ( name=18826136974 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T19:48:02+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE ( name='18826136974' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T19:48:38+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `name` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T19:48:39+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `name` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T19:48:40+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `name` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T19:48:40+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `name` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T19:48:40+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `name` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T19:49:24+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `name` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T19:49:35+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:02:33+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:02:34+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:02:35+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:02:52+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:03:23+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:03:27+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-21T20:04:11+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T20:12:40+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:14:33+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:15:38+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:15:52+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:15:56+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:15:56+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:15:57+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:18:27+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:18:51+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:20:43+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Array to string conversion C:\wamp64\www\mine\Home\Model\UsersModel.class.php 第 88 行.
+
+[ 2017-03-21T20:21:15+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:22:11+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:22:17+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\mine\Home\Controller\UsersController.class.php:57) C:\wamp64\www\mine\ThinkPHP\Library\Think\Controller\RestController.class.php 第 178 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\mine\Home\Controller\UsersController.class.php:57) C:\wamp64\www\mine\ThinkPHP\Library\Think\Controller\RestController.class.php 第 180 行.
+
+[ 2017-03-21T20:22:26+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:23:04+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:23:04+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:25:46+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136975' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\mine\Home\Controller\UsersController.class.php:57) C:\wamp64\www\mine\ThinkPHP\Library\Think\Controller\RestController.class.php 第 178 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at C:\wamp64\www\mine\Home\Controller\UsersController.class.php:57) C:\wamp64\www\mine\ThinkPHP\Library\Think\Controller\RestController.class.php 第 180 行.
+
+[ 2017-03-21T20:31:53+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:32:25+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:33:11+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Array to string conversion C:\wamp64\www\mine\Home\Model\UsersModel.class.php 第 75 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:33:25+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:46:44+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-21T20:46:57+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015601s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T20:47:18+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T21:17:09+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T21:19:01+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T21:19:02+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T21:19:45+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-21T21:20:01+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T21:21:25+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T21:27:25+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+
+[ 2017-03-21T21:56:48+08:00 ] ::1 /mine/index.php/Home/users/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:5
+
+[ 2017-03-21T21:57:27+08:00 ] ::1 /mine/index.php/Home/users/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:5
+
+[ 2017-03-21T21:58:46+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T21:58:48+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-03-21T21:58:49+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T21:58:49+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T21:58:49+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-21T21:58:50+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-03-21T21:59:02+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T21:59:40+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-21T22:01:00+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-21T22:01:08+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+
+[ 2017-03-21T22:01:57+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-21T22:02:17+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

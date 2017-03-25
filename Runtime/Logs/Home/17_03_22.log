@@ -1,0 +1,411 @@
+[ 2017-03-22T20:32:58+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-03-22T20:33:06+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-22T20:33:11+08:00 ] ::1 /mine/index.php/Home/users/18826136974
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-22T20:51:48+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-22T20:51:52+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-22T20:51:57+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-03-22T20:52:01+08:00 ] ::1 /mine/index.php/Home/session
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `users` WHERE `mobile` = '18826136974' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-03-22T21:03:22+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+ERR: Think\Controller:response方法不存在！
+
+[ 2017-03-22T21:03:47+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-22T21:03:56+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+
+[ 2017-03-22T21:21:32+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-22T21:23:38+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] require_once(__ROOT__/Home/Tool/include/config.php): failed to open stream: No such file or directory C:\wamp64\www\mine\Home\Tool\SMS.class.php 第 8 行.
+
+[ 2017-03-22T21:24:06+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] require_once(./include/config.php): failed to open stream: No such file or directory C:\wamp64\www\mine\Home\Tool\SMS.class.php 第 8 行.
+
+[ 2017-03-22T21:24:23+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T21:25:04+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T21:26:21+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Use of undefined constant post - assumed 'post' C:\wamp64\www\mine\Home\Tool\SMS.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-22T21:26:36+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] Missing argument 1 for post(), called in C:\wamp64\www\mine\Home\Tool\SMS.class.php on line 10 and defined C:\wamp64\www\mine\Home\Tool\include\httpUtil.php 第 67 行.
+NOTIC: [2] Missing argument 2 for post(), called in C:\wamp64\www\mine\Home\Tool\SMS.class.php on line 10 and defined C:\wamp64\www\mine\Home\Tool\include\httpUtil.php 第 67 行.
+NOTIC: [8] Undefined variable: funAndOperate C:\wamp64\www\mine\Home\Tool\include\httpUtil.php 第 72 行.
+NOTIC: [8] Undefined variable: body C:\wamp64\www\mine\Home\Tool\include\httpUtil.php 第 76 行.
+NOTIC: [8] Undefined variable: body C:\wamp64\www\mine\Home\Tool\include\httpUtil.php 第 82 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp64\www\mine\Home\Tool\include\httpUtil.php 第 82 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T21:27:33+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T21:29:18+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] require_once(APP_PATH/Home/Tool/include/config.php): failed to open stream: No such file or directory C:\wamp64\www\mine\Home\Tool\SMS.class.php 第 8 行.
+
+[ 2017-03-22T21:30:03+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T21:31:37+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T22:45:18+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T23:31:41+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-22T23:31:58+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-22T23:33:07+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-22T23:35:21+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-22T23:38:24+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+
+[ 2017-03-22T23:39:43+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined variable: ACCOUNT_SID C:\wamp64\www\mine\Home\Tool\SmsTool.class.php 第 61 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T23:41:04+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T23:41:42+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T23:45:34+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T23:46:08+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-03-22T23:48:35+08:00 ] ::1 /mine/index.php/Home/captchas
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `captchas` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\wamp64\www\mine\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
