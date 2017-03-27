@@ -12,8 +12,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `register` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `salt` char(6) NOT NULL DEFAULT '' COMMENT '盐,保护用户密码安全',
   `avatar` varchar(100) NOT NULL DEFAULT '' COMMENT '用户头像',
-  `sex` varchar(6) NOT NULL DEFAULT'male',
-  `birthday` datetime NOT NULL DEFAULT ''2000-01-01 00:00:00,
+  `sex` varchar(6),
+  `birthday` datetime,
   PRIMARY KEY (`id`),
   UNIQUE KEY `mobile` (`mobile`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
