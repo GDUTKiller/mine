@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `name` char(20) NOT NULL DEFAULT '',
   `last_login` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `register` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `salt` char(6) NOT NULL DEFAULT '' COMMENT '盐,保护用户密码安全',
+  `salt` varchar(10) NOT NULL DEFAULT '' COMMENT '盐,保护用户密码安全',
   `avatar` varchar(100) NOT NULL DEFAULT '' COMMENT '用户头像',
   `sex` varchar(6),
   `birthday` datetime,

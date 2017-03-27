@@ -9,6 +9,8 @@ class UsersModel extends Model {
         array('mobile', '', 'mobile already exists', 1, 'unique', 1),
         array('password', '/^[0-9a-zA-Z_]{8,20}$/', 'password format error', 1, 'regex', 1),
         array('name', '/^[\x{4e00}-\x{9fa5}a-zA-Z]{2,10}$/u', 'name must be chinese', 1, 'regex', 1),
+        array('recommend_code', '/^[a-z0-9]{8}$/', 'recommend code error', 1, 'regex', 1),
+        array('recommend_code', 'checkRecommend', 'recommend not exists', 1, 'callback', 1),
 
         //登录时候验证
         array('mobile', '/^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/', 'mobile format is wrong', 1, 'regex', 4), // 4代表登录时验证
@@ -16,6 +18,19 @@ class UsersModel extends Model {
         array('password', 'checkPass', 'password error', 1, 'callback', 4), // 4代表登录时验证
     );
 
+    /**
+     * 检查推荐码
+     * @param string $code 
+     * @return mixed false | recommend id
+     */
+    public function checkRecommend($code) {
+	$id = (int)substr($code, 0, strpos($code, '9') );
+	if(!$this->where(array('id'=>$id))->find() ) {
+ 	    return false;
+	} else {
+	    return $id;
+	}
+    }
 
     /**
      * 注册
@@ -23,7 +38,13 @@ class UsersModel extends Model {
      */
     public function reg() {
         $this->encPass();
-        return $this->add();
+	// 设置推荐人id
+	$this->pid = (int)substr($this->recommend_code, 0, strpos($this->recommend_code, '9'));
+        $id = $this->add();
+	
+	$recommend = substr( decoct($id) . '9' . str_shuffle('1234567890abcdefghijklmnopqrstuvwxyz'), 0, 8);
+	return $this->where(array('id'=>$id) )->save(array('recommend_code'=>$recommend));
+	
     }
 
     /**
@@ -102,7 +123,7 @@ class UsersModel extends Model {
      */
     public function revoke() {
         cookie('id', null);
-        cookie('name', null);
+        cookie('mobile', null);
         cookie('ccode', null);
     }
 
