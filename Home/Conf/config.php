@@ -17,5 +17,7 @@ return array(
         array('/^sessions$/', 'Users/logout', '', array('method'=>'delete')),
         // POST captchas 发送手机验证码
         array('/^captchas$/', 'Captchas/send', 'status=1', array('method'=>'post')),
+	// POST host/arts
+	array('/^arts$/', 'Arts/add', '', array('method'=>'post') ),
     ),
 );

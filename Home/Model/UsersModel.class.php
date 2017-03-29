@@ -24,7 +24,7 @@ class UsersModel extends Model {
      * @return mixed false | recommend id
      */
     public function checkRecommend($code) {
-	$id = (int)substr($code, 0, strpos($code, '9') );
+	$id = octdec((int)substr($code, 0, strpos($code, '9') ) );
 	if(!$this->where(array('id'=>$id))->find() ) {
  	    return false;
 	} else {
@@ -43,8 +43,8 @@ class UsersModel extends Model {
         $id = $this->add();
 	
 	$recommend = substr( decoct($id) . '9' . str_shuffle('1234567890abcdefghijklmnopqrstuvwxyz'), 0, 8);
-	return $this->where(array('id'=>$id) )->save(array('recommend_code'=>$recommend));
-	
+	$this->where(array('id'=>$id) )->save(array('recommend_code'=>$recommend));
+	return $id;
     }
 
     /**

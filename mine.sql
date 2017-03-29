@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `avatar` varchar(100) NOT NULL DEFAULT '' COMMENT '用户头像',
   `sex` varchar(6),
   `birthday` datetime,
+  `recommend_code` char(8) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `mobile` (`mobile`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
@@ -32,3 +33,55 @@ CREATE TABLE IF NOT EXISTS `captchas` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `mobile` (`mobile`)
 ) ENGINE=MyISAM  AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+--
+-- 表的结构 `minecars`
+--
+
+CCREATE TABLE IF NOT EXISTS `minecars` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(11) unsigned NOT NULL,
+  `type` tinyint(4) NOT NULL DEFAULT 1 COMMENT '矿车类型',
+  `buy_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '购买日期',
+  `mine_count` int(11) NOT NULL DEFAULT 0 COMMENT '挖矿数量',
+  `update_time` timestamp COMMENT '用户查询矿车挖矿情况的时间',
+  `speed` int(11) NOT NULL DEFAULT 0 COMMENT '矿车挖矿速度',
+  `init_count` int(11) NOT NULL DEFAULT 0 COMMENT '矿车初始挖矿数量，用户获得转赠的矿车会有初始数量',
+  `stage` tinyint(4) NOT NULL DEFAULT 0 COMMENT '矿车阶段',
+  PRIMARY KEY (`id`),
+  FOREIGN KEY(`uid`) REFERENCES `users`(id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf-8;
+
+--
+-- 
+--
+
+CREATE TABLE  IF NOT EXISTS `arts` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `camp_id` int(11) unsigned NOT NULL COMMENT '所属营地id',
+  `user_id` int(11) unsigned NOT NULL ,
+  `content` varchar(200) NOT NULL,
+  `pubtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `comm` smallint(5) unsigned NOT NULL DEFAULT 0 COMMENT '评论数',
+  `thumb` varchar(100) COMMENT '压缩图',
+  `pic` varchar(100) COMMENT '原图',
+  PRIMARY KEY (`id`),
+  KEY `camp_id` (`camp_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='用户发表的动态'
+
+---
+---
+---
+
+CREATE TABLE IF NOT EXISTS `comments` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `comment_id` int(11) unsigned COMMENT '回复其它评论的id',
+  `art_id` int(11) unsigned NOT NULL,
+  `user_id` int(11) unsigned NOT NULL DEFAULT '0',
+  `content` varchar(200) NOT NULL DEFAULT '',
+  `pubtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `art_id` (`art_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 

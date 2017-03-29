@@ -14,7 +14,7 @@ class UsersController extends RestController {
             //用户尚未登录，返回错误
             $this->response(array('code'=>-1, 'info'=>'you are not login','data'=>null), 'json');
         } else {
-            $data = $Users->field('name,mobile,avatar,sex,birthday,recommend_code' )->find(I('id'));
+            $data = $Users->field('id,name,mobile,avatar,sex,birthday,recommend_code' )->find(I('id'));
             if(!$data) {
                 $this->response(array('code'=>-2, 'info'=>'user does not exist','data'=>null), 'json');
             } else {
@@ -31,7 +31,7 @@ class UsersController extends RestController {
     public function update() {
         $Users = D('Users');
         if(!$Users->acc()) {
-            $this->response(array('code'=>-1, 'info'=>'you are not login'), 'json');
+            $this->response(array('code'=>-1, 'info'=>'you are not login', 'data'=>null), 'json');
         }
 
         //更改密码，不能同时更改密码和其他数据
@@ -39,20 +39,20 @@ class UsersController extends RestController {
         if(null != I('put.password')) {
             if(!preg_match('/^[0-9a-zA-Z_]{8,20}$/', I('put.password'))) {
                 //密码格式不对
-                $this->response(array('code'=>-5, 'info'=>'password format error'), 'json');
+                $this->response(array('code'=>-5, 'info'=>'password format error', 'data'=>null), 'json');
             } else if(null == I('put.captcha') ) {
                 //验证码为空
-                $this->response(array('code'=>-6, 'info'=>'captcha empty'), 'json');
+                $this->response(array('code'=>-6, 'info'=>'captcha empty', 'data'=>null), 'json');
             } else {
                 $Captchas = M('Captchas');
                 $data = $Captchas->field('captcha, expires_at, status')->where(array('mobile'=>cookie('mobile')))->find();
                 //验证码错误
                 if(I('put.captcha') != $data['captcha']) {
-                    $this->response(array('code'=>-7, 'info'=>'captcha error'), 'json');
+                    $this->response(array('code'=>-7, 'info'=>'captcha error', 'data'=>null), 'json');
                 } else if(strtotime(date('YmdHis')) > strtotime($data['expires_at'])  || $data['status'] == '1') {
 
                     //验证码过期 或者已经用过
-                    $this->response(array('code'=>-8, 'info'=>'captcha expire'), 'json');
+                    $this->response(array('code'=>-8, 'info'=>'captcha expire', 'data'=>null), 'json');
                 }
 
                 //更改验证码status并且保存
@@ -65,7 +65,8 @@ class UsersController extends RestController {
 
                 //保存更改
                 if($Users->where(array('id'=>cookie('id')))->save()) {
-                    $this->response(array('code'=>0), 'json');
+ 		    $data = $Users->field('id,name,mobile,avatar,sex,birthday,recommend_code')->where(array('id'=>cookie('id')))->find();
+                    $this->response(array('code'=>0, 'info'=>'', 'data'=>$data), 'json');
                 }
             }
         }
@@ -74,7 +75,7 @@ class UsersController extends RestController {
         if(!empty(I('put.name')) ) {
             
             if( !preg_match('/^[\x{4e00}-\x{9fa5}a-zA-Z]{2,10}$/u', I('put.name')) ) {
-                $this->response(array('code'=>-2, 'info'=>'name format error'), 'json');
+                $this->response(array('code'=>-2, 'info'=>'name format error', 'data'=>null), 'json');
   	    }
 	    $Users->name = I('put.name');
         }
@@ -82,7 +83,7 @@ class UsersController extends RestController {
         //更改性别
         if(!empty(I('put.sex')) ) {
 	    if(!preg_match('/^(\bmale\b)|(\bfemale\b)$/', I('put.sex'))) {
-                $this->response(array('code'=>-3, 'info'=>'sex format error'), 'json');
+                $this->response(array('code'=>-3, 'info'=>'sex format error', 'data'=>null), 'json');
 	    }
             $Users->sex = I('put.sex');
         }
@@ -91,14 +92,14 @@ class UsersController extends RestController {
         if(!empty(I('put.birthday'))  ) {
 	    if(!preg_match('/^(19|20)\d{2}-(1[0-2]|0?[1-9])-(0?[1-9]|[1-2][0-9]|3[0-1])$/', I('put.birthday'))) {
  	    
-                $this->response(array('code'=>-4, 'info'=>'birthday format error'), 'json');
+                $this->response(array('code'=>-4, 'info'=>'birthday format error', 'data'=>null), 'json');
  	    }
             $Users->birthday = I('put.birthday');
         }
 
         //保存姓名性别生日的更改
         if( $Users->where(array('id'=>cookie('id')))->save()) {
-            $this->response(array('code'=>0), 'json');
+            $this->response(array('code'=>0, 'info'=>'', 'data'=>null), 'json');
  	} else {
             $this->response(array('code'=>-9, 'info'=>'nothing change'), 'json');
  	}
@@ -116,10 +117,10 @@ class UsersController extends RestController {
         $data = $Captchas->field('captcha, expires_at, status')->where(array('mobile'=>I('mobile')))->find();
         //验证码错误
         if(I('captcha') != $data['captcha']) {
-            $this->response(array('code'=>-3, 'info'=>'captcha error'), 'json');
+            $this->response(array('code'=>-3, 'info'=>'captcha error', 'data'=>null), 'json');
         } else if(strtotime(date('YmdHis')) > strtotime($data['expires_at'])  || $data['status'] == '1') {
             //验证码过期 或者已经用过
-            $this->response(array('code'=>-4, 'info'=>'captcha expire'), 'json');
+            $this->response(array('code'=>-4, 'info'=>'captcha expire', 'data'=>null), 'json');
         }
 
         //更改验证码status并且保存
@@ -130,10 +131,11 @@ class UsersController extends RestController {
         if(!$Users->create()) {
             $this->response(array('code'=>-1,'info'=>$Users->getError(), 'data'=>null), 'json');
         }
-        if($Users->reg()) {
-            $this->response(array('code'=>0), 'json');
+	$id = $Users->reg();
+        if($id ) {
+            $this->response(array('code'=>0, 'info'=>'', 'data'=> $Users->field('id,name,mobile,avatar,sex,birthday,recommend_code')->where(array('id'=>$id))->find()), 'json');
         } else {
-            $this->response(array('code'=>-2, 'info'=>'add user error'), 'json');
+            $this->response(array('code'=>-2, 'info'=>'add user error', 'data'=>null), 'json');
         }
     }
 
@@ -158,7 +160,7 @@ class UsersController extends RestController {
 
             //上传失败
             if(!$info) {
-                $this->response(array('code'=>-2, 'info'=>$upload->getError()), 'json');
+                $this->response(array('code'=>-2, 'info'=>$upload->getError(), 'data'=>null), 'json');
             } else {
                 //删除用户以前的头像
                 $oldAvatar = $Users->field('avatar')->find(cookie('id'));
@@ -170,7 +172,7 @@ class UsersController extends RestController {
                 $avatarPath = '/Uploads/' . $info['avatar']['savepath'] . $info['avatar']['savename'];
                 $Users->avatar = $avatarPath;
                 $Users->where(array('id'=>cookie('id')))->save();
-                $this->response(array('code'=>0, 'data'=>$avatarPath), 'json');
+                $this->response(array('code'=>0,'info'=>'', 'data'=>$avatarPath), 'json');
             }
         }
     }
@@ -188,7 +190,7 @@ class UsersController extends RestController {
         }else{
             $Users->where(array('mobile'=>I('mobile') ) )->find();
             $Users->auth();
-            $this->response(array('code'=>0), 'json');
+            $this->response(array('code'=>0, 'info'=>'', 'data'=>null), 'json');
         }
     }
 
@@ -199,6 +201,6 @@ class UsersController extends RestController {
      */
     public function logout() {
         D('Users')->revoke();
-        $this->response(array('code'=>0), 'json');
+        $this->response(array('code'=>0, 'info'=>'', 'data'=>null), 'json');
     }
 }
