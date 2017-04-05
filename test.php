@@ -1,4 +1,3 @@
 <?php
-echo empty($_COOKIE['name']);
-
-
+echo $_GET['id'];
+echo $_GET['token'];

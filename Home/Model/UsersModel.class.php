@@ -5,18 +5,44 @@ class UsersModel extends Model {
     //自动验证
     protected $_validate = array(
         //新增数据时验证,即注册用户
-        array('mobile', '/^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/', 'mobile format is wrong', 1, 'regex', 1),
-        array('mobile', '', 'mobile already exists', 1, 'unique', 1),
-        array('password', '/^[0-9a-zA-Z_]{8,20}$/', 'password format error', 1, 'regex', 1),
-        array('name', '/^[\x{4e00}-\x{9fa5}a-zA-Z]{2,10}$/u', 'name must be chinese', 1, 'regex', 1),
-        array('recommend_code', '/^[a-z0-9]{8}$/', 'recommend code error', 1, 'regex', 1),
-        array('recommend_code', 'checkRecommend', 'recommend not exists', 1, 'callback', 1),
+        array('mobile', '/^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/', '手机格式错误', 1, 'regex', 1),
+        array('mobile', '', '该手机号已经存在', 1, 'unique', 1),
+        array('password', '/^[0-9a-zA-Z_]{6,16}$/', '密码格式错误', 1, 'regex', 1),
+        array('name', '/^[\x{4e00}-\x{9fa5}a-zA-Z]{2,10}$/u', '名字由中文和英文字母组成，长度在2到10之间', 1, 'regex', 1),
+
+	//这里推荐码的自动验证写的好烂，但是还是不改了
+        array('recommend_code', '/^[a-z0-9]{8}$/', '推荐码错误', 1, 'regex', 1),
+        array('recommend_code', 'checkRecommend', '推荐码不存在', 1, 'callback', 1),
 
         //登录时候验证
-        array('mobile', '/^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/', 'mobile format is wrong', 1, 'regex', 4), // 4代表登录时验证
-        array('mobile', 'isExist', 'mobile does not exist', 1, 'callback', 4), // 4代表登录时验证
-        array('password', 'checkPass', 'password error', 1, 'callback', 4), // 4代表登录时验证
+        array('mobile', '/^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/', '手机格式错误', 1, 'regex', 4), // 4代表登录时验证
+        array('mobile', 'isExist', '该手机号不存在', 1, 'callback', 4), // 4代表登录时验证
+        array('password', 'checkPass', '密码错误', 1, 'callback', 4), // 4代表登录时验证
     );
+
+    //自动完成
+    protected $_auto = array(
+	//新增数据时，自动完成city字段
+        array('city', 'getCity', 1, 'callback'),
+    );
+
+
+    /**
+     * 获取手机号所在城市
+     * @param post.mobile
+     */
+    public function getCity() {
+	$Phones = M('Phones');
+	//获取手机的前七位
+	$phoneStr = substr(I('mobile'), 0, 7);
+
+ 	$city = $Phones->where(array('phone'=>$phoneStr))->getField('city');
+	if(!$city) {
+	    return '火星';
+	}
+	return $city;
+    }
+
 
     /**
      * 检查推荐码
@@ -24,8 +50,8 @@ class UsersModel extends Model {
      * @return mixed false | recommend id
      */
     public function checkRecommend($code) {
-	$id = octdec((int)substr($code, 0, strpos($code, '9') ) );
-	if(!$this->where(array('id'=>$id))->find() ) {
+	$user_id = octdec((int)substr($code, 0, strpos($code, '9') ) );
+	if(!$this->where(array('user_id'=>$user_id))->find() ) {
  	    return false;
 	} else {
 	    return $id;
@@ -38,13 +64,13 @@ class UsersModel extends Model {
      */
     public function reg() {
         $this->encPass();
-	// 设置推荐人id
-	$this->pid = (int)substr($this->recommend_code, 0, strpos($this->recommend_code, '9'));
-        $id = $this->add();
+	// 设置推荐人user_id，八进制转回十进制
+	$this->parent_user_id = octdec((int)substr($this->recommend_code, 0, strpos($this->recommend_code, '9')) );
+        $user_id = $this->add();
 	
-	$recommend = substr( decoct($id) . '9' . str_shuffle('1234567890abcdefghijklmnopqrstuvwxyz'), 0, 8);
-	$this->where(array('id'=>$id) )->save(array('recommend_code'=>$recommend));
-	return $id;
+	$recommend = substr( decoct($user_id) . '9' . str_shuffle('1234567890abcdefghijklmnopqrstuvwxyz'), 0, 8);
+	$this->where(array('user_id'=>$user_id) )->save(array('recommend_code'=>$recommend));
+	return $user_id;
     }
 
     /**
@@ -110,11 +136,16 @@ class UsersModel extends Model {
 
     /**
      * 登录
+     * 设置cookie,其中user_id为用户id,token为加密字符串
+     * 用户表中，保存该用户的token和token_timeout，即过期时间
      */
     public function auth() {
-        cookie('id', $this->id);
-        cookie('mobile', $this->mobile);
-        cookie('ccode', $this->encCookie($this->id, $this->mobile));
+        cookie('user_id', $this->user_id);
+	$user_id = $this->user_id;
+	$this->token = md5($this->user_id . $this->mobile . $this->randStr());
+	$this->token_timeout = date('YmdHis',strtotime('+14 day'));	
+        cookie('token', $this->token);
+	$this->field('token,token_timeout')->where(array('user_id'=>$user_id))->save();
         return true;
     }
 
@@ -122,31 +153,23 @@ class UsersModel extends Model {
      * 退出登录
      */
     public function revoke() {
-        cookie('id', null);
-        cookie('mobile', null);
-        cookie('ccode', null);
+        cookie('user_id', null);
+        cookie('token', null);
     }
 
-    /**
-     * 加密cookie
-     */
-    public function encCookie($id, $mobile) {
-        return md5($id . '|' . $mobile . '|' . C('COO_KEY'));
-    }
 
     /**
      * 是否已经登录
      * @return boolean
      */
     public function acc() {
-        if(empty(cookie('id')) || empty(cookie('mobile')) || empty(cookie('ccode')) ) {
+        if(empty(cookie('user_id')) || empty(cookie('token')) ) {
             return false;
         }
-
-        if(md5(cookie('id') . '|' . cookie('mobile') . '|' . C('COO_KEY')) !== cookie('ccode') ) {
-            return false;
-        }
-
+	$this->where(array('user_id'=>cookie('user_id')))->find();
+	if(cookie('token') != $this->token ||  strtotime(date('YmdHis')) > strtotime($this->token_timeout)) {
+	    return false;
+	}
         return true;
     }
 }

@@ -53,7 +53,7 @@ CCREATE TABLE IF NOT EXISTS `minecars` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf-8;
 
 --
--- 
+-- 动态表
 --
 
 CREATE TABLE  IF NOT EXISTS `arts` (
@@ -68,20 +68,35 @@ CREATE TABLE  IF NOT EXISTS `arts` (
   PRIMARY KEY (`id`),
   KEY `camp_id` (`camp_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='用户发表的动态'
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='用户发表的动态'
 
 ---
----
+--- 动态的评论表
 ---
 
 CREATE TABLE IF NOT EXISTS `comments` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `comment_id` int(11) unsigned COMMENT '回复其它评论的id',
-  `art_id` int(11) unsigned NOT NULL,
-  `user_id` int(11) unsigned NOT NULL DEFAULT '0',
-  `content` varchar(200) NOT NULL DEFAULT '',
+  `art_id` int(11) unsigned NOT NULL COMMENT '动态的id',
+  `user_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '评论者的用户id',
+  `content` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `pubtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  KEY `art_id` (`art_id`),
-  KEY `user_id` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 
+  FOREIGN KEY `art_id` (`art_id`) REFERENCES arts(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 
+
+
+---
+--- 手机归属地表 字段不用char
+---
+CREATE TABLE IF NOT EXISTS `phones` (
+  `id` int(11) unsigned NOT NULL,
+  `phone` mediumint unsigned NOT NULL,
+  `province` char(3),
+  `city` char(5),
+  `provider` char(5),
+  `areacode` char(4),
+  `postcode` char(6),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `phone` (`phone`)
+)ENGINE=MyISAM DEFAULT CHARSET=utf8
