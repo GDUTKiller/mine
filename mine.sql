@@ -55,35 +55,33 @@ CCREATE TABLE IF NOT EXISTS `minecars` (
 --
 -- 动态表
 --
-
-CREATE TABLE  IF NOT EXISTS `arts` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `camp_id` int(11) unsigned NOT NULL COMMENT '所属营地id',
-  `user_id` int(11) unsigned NOT NULL ,
-  `content` varchar(200) NOT NULL,
+CREATE TABLE IF NOT EXISTS `arts` (
+  `art_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `city` char(5) NOT NULL DEFAULT '火星',
+  `user_id` int(11) unsigned NOT NULL,
+  `content` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `pubtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `comm` smallint(5) unsigned NOT NULL DEFAULT 0 COMMENT '评论数',
-  `thumb` varchar(100) COMMENT '压缩图',
-  `pic` varchar(100) COMMENT '原图',
-  PRIMARY KEY (`id`),
-  KEY `camp_id` (`camp_id`),
-  KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='用户发表的动态'
+  `comm` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT '评论数',
+  `pic` varchar(100) DEFAULT '' COMMENT '原图',
+  PRIMARY KEY (`art_id`),
+  KEY `arts_userid_users` (`user_id`),
+  CONSTRAINT `arts_userid_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='用户发表的动态' 
 
 ---
 --- 动态的评论表
 ---
-
 CREATE TABLE IF NOT EXISTS `comments` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `comment_id` int(11) unsigned COMMENT '回复其它评论的id',
+  `comment_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `response_user_id` int(11) unsigned DEFAULT NULL COMMENT '回复其他评论的用户id',
   `art_id` int(11) unsigned NOT NULL COMMENT '动态的id',
   `user_id` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '评论者的用户id',
   `content` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `pubtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  FOREIGN KEY `art_id` (`art_id`) REFERENCES arts(`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 
+  PRIMARY KEY (`comment_id`),
+  KEY `comments_artid_arts` (`art_id`),
+  CONSTRAINT `comments_artid_arts` FOREIGN KEY (`art_id`) REFERENCES `arts` (`art_id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8  
 
 
 ---
@@ -100,3 +98,69 @@ CREATE TABLE IF NOT EXISTS `phones` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `phone` (`phone`)
 )ENGINE=MyISAM DEFAULT CHARSET=utf8
+
+---
+--- 文章用户点赞表
+---
+CREATE TABLE IF NOT EXISTS `user_like_art` (
+  `user_like_art_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `art_id` int(11) unsigned NOT NULL,
+  `user_id` int(11) unsigned NOT NULL,
+  `status` tinyint NOT NULL DEFAULT 0,
+  PRIMARY KEY (`user_like_art_id`)
+)ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
+
+---
+--- 文章点赞数表
+---
+CREATE TABLE IF NOT EXISTS `art_like` (
+  `art_like_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `art_id` int(11) unsigned NOT NULL,
+  `like_count` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`art_like_id`)
+)ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 
+
+
+
+---
+--- 矿车表
+---
+CREATE TABLE IF NOT EXISTS `cars` (
+  `car_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) unsigned NOT NULL,
+  `gold_count` int(11) unsigned NOT NULL DEFAULT 0,
+  `car_type` tinyint unsigned NOT NULL DEFAULT 1,
+  `durability` tinyint unsigned NOT NULL DEFAULT 100,
+  `digging` tinyint(1) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY(`car_id`)
+)AUTO_INCREMENT=1 DEFAULT CHARSET=UTF8 
+
+
+
+---
+--- 房间表
+---
+CREATE TABLE IF NOT EXISTS `rooms` (
+  `room_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `room_type` tinyint unsigned NOT NULL DEFAULT 1,
+  `room_count` int(11) unsigned NOT NULL DEFAULT 100000,
+  `people_num` tinyint unsigned NOT NULL DEFAULT 0,
+  `buff` tinyint unsigned NOT NULL DEFAULT 1,
+  `buff_begin` timestamp NOT NULL DEFAULT 0,
+  `buff_end` timestamp NOT NULL DEFAULT 0,
+  PRIMARY KEY(`room_id`)
+)AUTO_INCREMENT=1 DEFAULT CHARSET=UTF8
+
+
+---
+--- 矿车进入房间挖矿表
+---
+CREATE TABLE IF NOT EXISTS `digs` (
+  `dig_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `dig_begin` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `dig_end` timestamp NOT NULL DEFAULT 0,
+  `dig_count` int(11) NOT NULL DEFAULT 0,
+  `car_id` int(11) NOT NULL,
+  `room_id` int(11) NOT NULL,
+  PRIMARY KEY (dig_id)
+)AUTO_INCREMENT=1 DEFAULT CHARSET=UTF8

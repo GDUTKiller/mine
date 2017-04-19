@@ -56,6 +56,8 @@ class ArtsController extends RestController {
 	    $art_id = $Arts->add();
 	    $data = $Arts->find($art_id);
 	    if($art_id) {
+		//创建文章点赞数表
+		M('ArtLike')->data(array('art_id'=>$art_id))->add();
 	        $this->response(array('code'=>0, 'info'=>'发表动态成功', 'data'=>$data) , 'json');
 	    } else {
 	        $this->response(array('code'=>-3, 'info'=>'发表动态失败', 'data'=>null) , 'json');
@@ -101,7 +103,6 @@ class ArtsController extends RestController {
     /**
      * 获取用户营地的动态 GET 请求
      * @param time time之前发的动态
-     * @param begin 从begin开始，获得十条动态
      * @return json
      */
     public function getArts() {
@@ -110,25 +111,89 @@ class ArtsController extends RestController {
 	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
 	}
 		
-	$time = I('time');
-	$begin = I('begin');
+	$art_id = I('art_id');
 	//获取用户的城市所在地
  	$city = $Users->where(array('user_id'=>cookie('user_id')))->getField('city');	
 
 	$Arts = M('Arts');
-	$map['arts.city'] = $city;
-	$map['pubtime'] = array('elt', $time);
 	
-	//动态表和用户表join，查询
-	$data = $Arts->join('users ON arts.user_id = users.user_id')->field('name,avatar,arts.*')->order('pubtime desc')->where(array('arts.city'=>$city, 'arts.pubtime'=>array('elt', $time)))->limit($begin, 10)->select();
+	if($art_id == 0) {
+	    //动态表和用户表join，查询
+	    $data = $Arts->join('users ON arts.user_id = users.user_id')->field('name,avatar,arts.*')->order('art_id desc')->where(array('arts.city'=>$city))->limit(0, 10)->select();
+	} else {
+	    //动态表和用户表join，查询
+	    $data = $Arts->join('users ON arts.user_id = users.user_id')->field('name,avatar,arts.*')->order('art_id desc')->where(array('arts.city'=>$city, 'arts.art_id'=>array('lt', $art_id)))->limit(0, 10)->select();
+	}
 	
 	$Comments = M('Comments');
 	foreach($data as $k=>$v) {
-	    //查询该动态的前三条数据
-	    $comm_data = $Comments->join('users ON comments.user_id = users.user_id')->field('name,avatar,comments.*')->order('pubtime ASC')->where(array('comments.art_id'=>$v['art_id']))->limit(0, 3)->select();
+    	    //用户是否对这篇文章点赞	    
+ 	    $data[$k]['like'] = M('UserLikeArt')->where(array('user_id'=>cookie('user_id'), 'art_id'=>$v['art_id']))->getField('like') ? 1: 0;
+
+	    //该文章的点赞总数
+	    $data[$k]['like_count'] = M('ArtLike')->where(array('art_id'=>$v['art_id']))->getField('like_count');
+
+
+	    //查询该动态的前三条评论
+	    $sql = " select ifnull(puser.user_id, 0) as pid, ifnull(puser.name,'') as pname, ifnull(puser.avatar,'') as pavatar, cuser.user_id cid, cuser.name cname, cuser.avatar  cavatar, comments.comment_id, content, pubtime from
+		 comments left join users as puser on puser.user_id=response_user_id left join users as cuser on cuser.user_id = comments.user_id  where comments.art_id = %d  order by pubtime ASC limit 0, 3";
+	    $comm_data = $Comments->query($sql, $v['art_id']);
+	    // $comm_data = $Comments->join('users ON comments.user_id = users.user_id')->field('name,avatar,comments.*')->order('pubtime ASC')->where(array('comments.art_id'=>$v['art_id']))->limit(0, 3)->select();
 	    $data[$k]['comments'] = $comm_data;
 	}
 	$this->response(array('code'=>0, 'info'=>'获取动态成功', 'data'=>$data), 'json');
 
     }
+
+    /**
+     * 点赞 PUT host/arts
+     * @param int art_id 要点赞的文章的art_id
+     */
+    public function like() {
+	$Users = D('Users');
+        if(!$Users->acc()) {
+            $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
+        }
+	
+	//用户动态点赞表
+	$UserLikeArt = M('UserLikeArt');
+	//文章点赞数表
+	$ArtLike = M('ArtLike');
+
+	//map 查询用户文章点赞表条件
+	$map['user_id'] = cookie('user_id');
+	$map['art_id'] = I('art_id');
+
+	//如果用户没有点赞过这个动态
+	if(!$UserLikeArt->where($map)->find() ) {
+	    //创建用户动态点赞表
+	    $UserLikeArt->data($map)->add();
+
+	    $ArtLike->where(array('art_id'=>I('art_id')))->setInc('like_count');
+	    $likeCount =  $ArtLike->where(array('art_id'=>I('art_id')))->getField('like_count');
+	    $this->response(array('code'=>0, 'info'=>'点赞成功', 'data'=>array('like'=>1, 'like_count'=>$likeCount)), 'json');
+	} else {
+	    //用户点赞过这个动态,现在取消点赞
+	    if($UserLikeArt->like) {
+		$ArtLike->where(array('art_id'=>I('art_id')))->setDec('like_count');
+		$UserLikeArt->where($map)->save(array('like'=>0));
+
+	        $likeCount =  $ArtLike->where(array('art_id'=>I('art_id')))->getField('like_count');
+	        $this->response(array('code'=>0, 'info'=>'取消点赞', 'data'=>array('like'=>0, 'like_count'=>$likeCount)), 'json');
+	    } else {
+		//用户点赞过这个表，但是取消点赞了，现在继续点赞
+		$ArtLike->where(array('art_id'=>I('art_id')))->setInc('like_count');
+		$UserLikeArt->where($map)->save(array('like'=>1));
+		
+	        $likeCount =  $ArtLike->where(array('art_id'=>I('art_id')))->getField('like_count');
+	        $this->response(array('code'=>0, 'info'=>'点赞成功', 'data'=>array('like'=>1, 'like_count'=>$likeCount)), 'json');
+	    }
+	}
+	
+	
+
+    }
+
+
+
 }

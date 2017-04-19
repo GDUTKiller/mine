@@ -229,13 +229,14 @@ class UsersController extends RestController {
     }
     
     public function test1() {
-	echo C('YJL');
+	echo date('YmdHis');
     }
 
     public function test2() {
-	$config = array('YJL'=>'yjl');
-	C($config);
-	echo C('YJL');
+	$siteinfo_file = './Common/Conf/commission.php';
+	$config = array('COMMISSION_FIRST'=>'0.6');
+	$result = file_put_contents($siteinfo_file, "<?php\nreturn " . var_export($config, true).';');
+	echo $result;
     }
     
 }

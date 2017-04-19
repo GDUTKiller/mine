@@ -38,8 +38,27 @@ class CommentsController extends RestController {
 	$Arts->comm = $Arts->comm +1;
 	$Arts->field('comm')->where(array('art_id'=>I('art_id')))->save();
 
-	$data = $Comments->find($comment_id);
-	$this->response(array('code'=>0, 'info'=>'发表评论成功', 'data'=>$data), 'json');
+
+        //动态表和用户表join，查询
+        $art_data = $Arts->join('users ON arts.user_id = users.user_id')->field('name,avatar,arts.*')->where(array('art_id'=>I('art_id')))->find();
+
+	//用户是否对这篇文章点赞        
+        $art_data['like'] = M('UserLikeArt')->where(array('user_id'=>cookie('user_id'), 'art_id'=>I('art_id')))->getField('like') ? 1: 0;
+
+        //该文章的点赞总数
+        $art_data['like_count'] = M('ArtLike')->where(array('art_id'=>I('art_id')))->getField('like_count');
+
+        //查询该动态的前三条评论
+	$sql = "select ifnull(puser.user_id, 0) as pid, ifnull(puser.name,'') as pname, ifnull(puser.avatar,'') as pavatar, cuser.user_id cid, cuser.name cname, cuser.avatar  cavatar, comments.comment_id, content, pubtime
+		from comments left join users as puser on puser.user_id=response_user_id left join users as cuser on cuser.user_id = comments.user_id
+	        where comments.art_id = %d  order by pubtime ASC limit 0, 3";
+	$comm_data = $Comments->query($sql, I('art_id'));
+      
+	//$comm_data = $Comments->join('users ON comments.user_id = users.user_id')->field('name,avatar,comments.*')->order('pubtime ASC')->where(array('comments.art_id'=>I('art_id')))->limit(0, 3)->select();
+        $art_data['comments'] = $comm_data;
+
+	//$data = $Comments->find($comment_id);
+	$this->response(array('code'=>0, 'info'=>'发表评论成功', 'data'=>$art_data), 'json');
     }
 
     /**
