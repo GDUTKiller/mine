@@ -229,10 +229,10 @@ class RoomsController extends RestController {
      * 获取用户加入的房间
      */
     public function getRooms() {
-	//$Users = D('Users');
-	//if(!$Users->acc()) {
-	//    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
-	//}
+	$Users = D('Users');
+	if(!$Users->acc()) {
+	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
+	}
 
 	$Cars = M('Cars');	
 	//获取用户的矿车
@@ -278,34 +278,52 @@ class RoomsController extends RestController {
 
 
     public function getRoom() {
+	$Users = D('Users');
+	if(!$Users->acc()) {
+	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
+	}
+
 	$room_id = I('room_id');
 	$car_id = I('car_id');
 
 	$Cars = M('Cars');
+	
 	$car_type = $Cars->where(array('car_id'=>$car_id))->getField('car_type');
 	
 	$room_id += $car_type * 10000;
 
-	$this->refresh($room_id, $car_id);
+	$this->refresh($room_id);
 
 	$Rooms = M('Rooms');
 	$Digs = M('Digs');
+	$Users = M('Users');
 
 	$room_data = $Rooms->field('room_count,people_num,buff,buff_begin,buff_end')->where(array('room_id'=>$room_id))->find();
 	$dig_data = $Digs->field('dig_begin,dig_end,dig_count')->where(array('room_id'=>$room_id, 'car_id'=>$car_id, 'dig_status'=>1))->find();
+	$user_data = array();
 	//如果$dig_data === null 说明此次挖矿已经结束
 	if($dig_data === null) {
 	    $room_data['complete'] = true;
 	    $dig_data = $Digs->field('dig_begin,dig_end,dig_count')->where(array('room_id'=>$room_id, 'car_id'=>$car_id, 'dig_status'=>2))->order(array('dig_end'=>'desc'))->find();
 	} else {
 	    $room_data['complete'] = false;
+	    
+	    $car_id_array = $Digs->where(array('room_id'=>$room_id,  'dig_status'=>1))->getField('car_id', true);
+	    foreach($car_id_array as $k=>$v) {
+		$user_id = $Cars->where(array('car_id'=>$v))->getField('user_id');
+		
+		$user_data[] = $Users->field('user_id,name,avatar')->where(array('user_id'=>$user_id))->find();		
+	    }
 	}
+
+	$room_data['users'] = $user_data;		
+
  	$this->response(array('code'=>0, 'info'=>"获取挖矿信息成功", 'data'=>array_merge($room_data,$dig_data)), 'json');
     }
 
 	
 
-    private function refresh($room_id, $r_car_id) {
+    private function refresh($room_id) {
 	$Rooms = M('Rooms');
 
 	$room_data = $Rooms->where(array('room_id'=>$room_id))->find();
@@ -328,8 +346,20 @@ class RoomsController extends RestController {
 	    $Rooms->startTrans();	    
 	    
 	    //防止高并发情况下，重复刷新，这里对房间使用排他锁，并再次判断上次刷新时间
-	    $data = $Rooms->query("SELECT update_time FROM rooms WHERE room_id = '%d' for update", $room_id);
+	    $data = $Rooms->query("SELECT * FROM rooms WHERE room_id = '%d' for update", $room_id);
 	    $update_time = $data[0]['update_time'];
+
+	    //房间buff信息
+	    $buff_begin = $data[0]['buff_begin'];
+	    $buff_end = $data[0]['buff_end'];
+	    //$buff默认为1
+	    $buff = 1;
+
+	    //如果现在处于buff时间内，则设置buff
+	    if(strtotime($buff_end) > $now_time && $now_time > strtotime($buff_end)) {
+	        $buff = $data[0]['buff'];
+	    }
+
 	    if($now_time - strtotime($update_time) < C('ROOM_REFRESH_INTERVAL') ) {
 	        $Rooms->rollback();
 	    } else {
@@ -367,8 +397,8 @@ class RoomsController extends RestController {
 			$rate = 0;
 		    }
 
-		    //此次刷新，该矿车应当挖到的挖矿数量，为挖矿速率乘以挖矿次数乘以金币获取比例
-		    $dig_count = C('CAR_RATE_' . $car_type) * $times * $rate; 
+		    //此次刷新，该矿车应当挖到的挖矿数量，为挖矿速率 乘以挖矿次数$times 乘以金币获取比例$rate 乘以$buff
+		    $dig_count = C('CAR_RATE_' . $car_type) * $times * $rate * $buff; 
 		    //房间剩余金币
 	 	    $room_count = $Rooms->where(array('room_id'=>$room_id))->getField('room_count');		
 		    
@@ -378,7 +408,7 @@ class RoomsController extends RestController {
 			$dig_count = $room_count;
 
 			//此时挖矿次数需要重新计算
-		        $times = intval(ceil($dig_count / ($rate * C('CAR_RATE_' . $car_type) ) )); 
+		        $times = intval(ceil($dig_count / ($buff * $rate * C('CAR_RATE_' . $car_type) ) )); 
 
 			//设置房间金币为0 标志为真
 			$room_flag = true;

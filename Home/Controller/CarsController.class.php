@@ -18,6 +18,10 @@ class CarsController extends RestController {
 	$Cars = M('Cars');
  	$data = $Cars->field('car_id,gold_count,car_type,durability,car_status')->where(array('user_id'=>cookie('user_id')))->select();
 	
+	//foreach($data as $k => $v) {
+	//    $data[$k]['introduction'] = C('CAR_INTRODUCTION_' . $v['car_type']);
+	//}	
+
 	$this->response(array('code'=>0, 'info'=>'获取矿车信息成功', 'data'=>$data), 'json');
   		
     } 

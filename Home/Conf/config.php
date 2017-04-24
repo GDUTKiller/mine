@@ -58,7 +58,6 @@ return array(
 	//获取用户所加入的房间 GET host/rooms
         array('/^rooms$/', 'Rooms/getRooms', '', array('method'=>'get')),
 	//刷新房间 GET host/rooms/room_id/car_id
-        array('/^rooms\/([1-9]\d{0,3})\/([1-9]\d*)$/', 'Rooms/getRoom?room_id=:1&car_id=:2', '', array('method'=>'get')),
-	
+	array('/^rooms\/(\d{4})\/([1-9]\d*)$/', 'Rooms/getRoom?room_id=:1&car_id=:2', '', array('method'=>'get')),	
     ),
 );

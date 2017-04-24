@@ -6,7 +6,7 @@ class CaptchasController extends RestController {
     public function send() {
         //如果传入的不是手机号
         if(!preg_match('/^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/', I('mobile') ) ) {
-            $this->response(array('code'=>-1, 'info'=>'手机格式错误', 'data'=>null),'json');
+            $this->response(array('code'=>-2, 'info'=>'手机格式错误', 'data'=>null),'json');
         } else {
             $Captchas = D('Captchas');
             //查询该手机号数据

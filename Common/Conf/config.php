@@ -7,7 +7,8 @@ return array(
     'DB_PWD'                =>  'mine123',          // 密码
     'URL_MODEL'		    =>  1,
 
-    'LOAD_EXT_CONFIG' => 'commission,room',
+    //配置扩展
+    'LOAD_EXT_CONFIG' => 'commission,room,car',
 	
     //'配置项'=>'配置值' //
     'URL_ROUTER_ON'         =>  true,
@@ -66,6 +67,6 @@ return array(
 	//获取用户所加入的房间 GET host/rooms
         array('/^rooms$/', 'Home/Rooms/getRooms', '', array('method'=>'get')),
     	//刷新房间 GET host/rooms/room_id/car_id
-        array('/^rooms\/([1-9]\d{0,3})\/([1-9]\d*)$/', 'Home/Rooms/getRoom?room_id=:1&car_id=:2', '', array('method'=>'get')),	
+        array('/^rooms\/(\d{4})\/([1-9]\d*)$/', 'Home/Rooms/getRoom?room_id=:1&car_id=:2', '', array('method'=>'get')),	
     ),
 );

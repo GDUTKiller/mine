@@ -146,7 +146,7 @@ class UsersController extends RestController {
 
 
         if(!$Users->field('mobile,password,name,recommend_code')->create()) {
-            $this->response(array('code'=>-1,'info'=>$Users->getError(), 'data'=>null), 'json');
+            $this->response(array('code'=>-5,'info'=>$Users->getError(), 'data'=>null), 'json');
         }
 	$user_id = $Users->reg();
         if($user_id ) {
@@ -206,7 +206,7 @@ class UsersController extends RestController {
         $Users = D("Users"); // 实例化User对象
         if (!$Users->field('mobile,password')->create($_POST, 4)){ // 登录验证数据
             // 验证没有通过 输出错误提示信息
-            $this->response(array('code'=>-1, 'info'=>$Users->getError(), 'data'=>null), 'json');
+            $this->response(array('code'=>-2, 'info'=>$Users->getError(), 'data'=>null), 'json');
         }else{
 	    //先查找该用户，使$Users->data()为该用户的数据
             $Users->where(array('mobile'=>I('mobile') ) )->find();
