@@ -28,6 +28,15 @@ return array(
         array('/^sessions$/', 'Home/Users/logout', '', array('method'=>'delete')),
 
 
+        // POST ids 注销
+        array('/^ids$/', 'Home/Users/identify', '', array('method'=>'post')),
+
+        // PUT host/golds 转赠金币
+        array('/^golds$/', 'Home/Users/changeCount', '', array('method'=>'put')),
+
+        // GET host/ranks/{type} 获取排行榜
+        array('/^ranks\/(\d)$/', 'Home/Users/getRank?type=:1', '', array('method'=>'get')),
+
         // POST captchas 发送手机验证码
         array('/^captchas$/', 'Home/Captchas/send', 'status=1', array('method'=>'post')),
 
@@ -55,6 +64,10 @@ return array(
 
         //获取矿车 GET  host/cars
         array('/^cars$/', 'Home/Cars/getInfo', '', array('method'=>'get')),
+        //转赠矿车 PUT  host/cars
+        array('/^cars$/', 'Home/Cars/presentCar', '', array('method'=>'put')),
+        //购买矿车 POST  host/cars
+        array('/^cars$/', 'Home/Cars/buyCar', '', array('method'=>'post')),
 
 	//查询房间状态 GET host/rooms/room_id
         array('/^rooms\/(\d{4,5})$/', 'Home/Rooms/getRoomInfo?room_id=:1', '', array('method'=>'get')),

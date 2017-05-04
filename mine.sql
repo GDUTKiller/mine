@@ -164,3 +164,17 @@ CREATE TABLE IF NOT EXISTS `digs` (
   `room_id` int(11) NOT NULL,
   PRIMARY KEY (dig_id)
 )AUTO_INCREMENT=1 DEFAULT CHARSET=UTF8
+
+
+--
+-- 实名认证表
+--
+
+CREATE TABLE `identifications` (
+  `identification_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `id` varchar(18) NOT NULL,
+  `mobile` char(20) NOT NULL,
+  `name` char(20) NOT NULL,
+  `user_id` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`identification_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 

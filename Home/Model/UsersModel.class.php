@@ -10,13 +10,13 @@ class UsersModel extends Model {
         array('password', '/^[0-9a-zA-Z_]{6,16}$/', '密码格式错误', 1, 'regex', 1),
         array('name', '/^[\x{4e00}-\x{9fa5}a-zA-Z]{2,10}$/u', '名字由中文和英文字母组成，长度在2到10之间', 1, 'regex', 1),
 
-	//这里推荐码的自动验证写的好烂，但是还是不改了
+	//推荐码自动验证
         array('recommend_code', '/^[a-z0-9]{8}$/', '推荐码错误', 1, 'regex', 1),
         array('recommend_code', 'checkRecommend', '推荐码不存在', 1, 'callback', 1),
 
         //登录时候验证
         array('mobile', '/^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/', '手机格式错误', 1, 'regex', 4), // 4代表登录时验证
-        array('mobile', 'isExist', '该手机号不存在', 1, 'callback', 4), // 4代表登录时验证
+        array('mobile', 'isExist', '该账户不存在', 1, 'callback', 4), // 4代表登录时验证
         array('password', 'checkPass', '密码错误', 1, 'callback', 4), // 4代表登录时验证
     );
 
