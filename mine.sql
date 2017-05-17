@@ -178,3 +178,60 @@ CREATE TABLE `identifications` (
   `user_id` int(11) unsigned NOT NULL,
   PRIMARY KEY (`identification_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 
+
+
+
+--
+-- 买矿车提成表
+--
+
+CREATE TABLE `commissions` (
+  `commission_id` int unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int unsigned  NOT NULL,
+  `car_user_id` int unsigned NOT NULL,
+  `count` int unsigned NOT NULL,
+  PRIMARY KEY (`commission_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 
+
+
+--
+-- 转赠表
+--
+
+CREATE TABLE `presents` (
+  `present_id` int unsigned NOT NULL AUTO_INCREMENT,
+  `from_user_id` int unsigned NOT NULL,
+  `to_user_id` int unsigned NOT NULL,
+  `type` tinyint NOT NULL DEFAULT 0 COMMENT '0代表转赠金币，1,2,3代表转赠矿车',
+  `count` int NOT NULL DEFAULT 1 COMMENT '转赠矿车的数量1，或者金币数量',
+  `present_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`present_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8
+ 
+--
+-- 收入支出表
+--
+CREATE TABLE IF NOT EXISTS `bills` (
+  `bill_id` int unsigned NOT NULL AUTO_INCREMENT,
+  `type` tinyint unsigned NOT NULL COMMENT '0代表转赠，2代表挖矿',
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `golds` int unsigned NOT NULL,
+  `ref_id` int unsigned NOT NULL COMMENT '对应的转赠或者挖矿id',
+  PRIMARY KEY (bill_id)
+)ENGINE=InnoDB  AUTO_INCREMENT=1 DEFAULT CHARSET=UTF8
+
+--
+-- 手机充值表
+--
+CREATE TABLE IF NOT EXISTS `recharges` (
+  `recharge_id` int unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int unsigned NOT NULL,
+  `type` tinyint unsigned NOT NULL COMMENT '0代表话费，1代表流量',
+  `goods` smallint unsigned NOT NULL,
+  `complete` tinyint unsigned NOT NULL DEFAULT 0 COMMENT '是否充值成功',
+  `begin_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '用户发起充值的时间',
+  `end_time` timestamp NOT NULL DEFAULT 0 COMMENT '后台受理此次充值的时间',
+  PRIMARY KEY (recharge_id)
+)ENGINE=InnoDB  AUTO_INCREMENT=1 DEFAULT CHARSET=UTF8
+
+

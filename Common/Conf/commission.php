@@ -24,8 +24,8 @@ return array (
 
 
 
-  //赠送金币的成功率
-  'PRESENT_COMMISSION' => 0.95,
+  //赠送金币的手续费
+  'PRESENT_COMMISSION' => 0.05,
   //赠送金币最小值
   'PRESENT_LEAST' => 500,
 );

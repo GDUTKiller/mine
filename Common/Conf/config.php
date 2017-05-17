@@ -8,7 +8,7 @@ return array(
     'URL_MODEL'		    =>  1,
 
     //配置扩展
-    'LOAD_EXT_CONFIG' => 'commission,room,car',
+    'LOAD_EXT_CONFIG' => 'commission,room,car,recharge',
 	
     //'配置项'=>'配置值' //
     'URL_ROUTER_ON'         =>  true,
@@ -28,14 +28,46 @@ return array(
         array('/^sessions$/', 'Home/Users/logout', '', array('method'=>'delete')),
 
 
-        // POST ids 注销
+        // POST ids 实名认证
         array('/^ids$/', 'Home/Users/identify', '', array('method'=>'post')),
-
         // PUT host/golds 转赠金币
         array('/^golds$/', 'Home/Users/changeCount', '', array('method'=>'put')),
+        // GET host/notices/{$id} 获取通知
+        array('/^notices\/(\d+)$/', 'Home/Users/getNotices?id=:1', '', array('method'=>'get')),
+        // PUT host/notices/ 删除通知
+        array('/^notices$/', 'Home/Users/delNotice', '', array('method'=>'put')),
+        // GET host/bills/{bill_id} 获取收支
+        array('/^bills\/(\d+)$/', 'Home/Users/getBills?bill_id=:1', '', array('method'=>'get')),
+        // GET host/recharge 获取充值信息
+        array('/^recharges/', 'Home/Users/getRecharges', '', array('method'=>'get')),
+        // POST /recharge  充值
+        array('/^recharge$/', 'Home/Users/recharge', '', array('method'=>'post')),
 
         // GET host/ranks/{type} 获取排行榜
         array('/^ranks\/(\d)$/', 'Home/Users/getRank?type=:1', '', array('method'=>'get')),
+
+        // GET host/commissions/  获取提成
+        array('/^commissions\/(\d+)\/(\d+)$/', 'Home/Commissions/getCommissions?user_id=:1&page=:2', '', array('method'=>'get')),
+
+        // POST captchas 发送手机验证码
+        array('/^captchas$/', 'Home/Captchas/send', 'status=1', array('method'=>'post')),
+
+
+
+        //发表动态的图片 POST host/arts/pics
+        array('/^arts\/pics$/', 'Home/Arts/upload', '', array('method'=>'post') ),
+	//PUT host/arts 点赞文章
+	array('/^arts$/', 'Home/Arts/like', 'status=1', array('method'=>'put')),
+        // POST host/arts  发表动态
+        array('/^arts$/', 'Home/Arts/add', 'status=1', array('method'=>'post') ),
+        //DELETE host/arts/art_id 删除文章
+ 
+
+        // GET host/ranks/{type} 获取排行榜
+        array('/^ranks\/(\d)$/', 'Home/Users/getRank?type=:1', '', array('method'=>'get')),
+
+        // GET host/commissions/  获取提成
+        array('/^commissions\/(\d+)\/(\d+)$/', 'Home/Commissions/getCommissions?user_id=:1&page=:2', '', array('method'=>'get')),
 
         // POST captchas 发送手机验证码
         array('/^captchas$/', 'Home/Captchas/send', 'status=1', array('method'=>'post')),
@@ -66,6 +98,8 @@ return array(
         array('/^cars$/', 'Home/Cars/getInfo', '', array('method'=>'get')),
         //转赠矿车 PUT  host/cars
         array('/^cars$/', 'Home/Cars/presentCar', '', array('method'=>'put')),
+        //获取矿车商品详情 GET  host/cargoods
+        array('/^cargoods$/', 'Home/Cars/getCardetails', '', array('method'=>'get')),
         //购买矿车 POST  host/cars
         array('/^cars$/', 'Home/Cars/buyCar', '', array('method'=>'post')),
 

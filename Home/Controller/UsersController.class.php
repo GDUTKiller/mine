@@ -4,7 +4,6 @@ use Think\Controller\RestController;
 
 class UsersController extends RestController {
 
-
    /**
      * 获取用户信息
      * GET host/users/id
@@ -343,9 +342,12 @@ class UsersController extends RestController {
 	    $this->response(array('code'=>-2, 'info'=>"要转赠的金币最少为" . C('PRESENT_LEAST'), 'data'=>null), 'json');
 	}
 	
+	//转赠者要扣除的总金币（加上手续费）
+	$from_gold = $gold + ceil($gold * C('PRESENT_COMMISSION'));
+	//转赠者的金币
 	$origin_gold = $Users->where(array('user_id'=>$from_user_id))->getField('count'); 
-	if($gold > $origin_gold) {
-	    $this->response(array('code'=>-3, 'info'=>"要转赠的金币最大值为{$origin_gold}", 'data'=>null), 'json');
+	if($from_gold > $origin_gold) {
+	    $this->response(array('code'=>-3, 'info'=>"您当前能转赠的金币数量最大为" . floor($origin_gold*(1-C('PRESENT_COMMISSION'))), 'data'=>null), 'json');
 	}
 
 	$from_mobile = $Users->where(array('user_id'=>$from_user_id))->getField('mobile'); 
@@ -356,6 +358,11 @@ class UsersController extends RestController {
 	    $this->response(array('code'=>-4, 'info'=>'要转赠的用户不存在', 'data'=>null), 'json');
 	}
 	$to_user_id = $to_user_data['user_id'];
+
+	if($from_user_id == $to_user_id) {
+	    $this->response(array('code'=>-8, 'info'=>'不能自己转赠金币给自己', 'data'=>null), 'json');
+	}
+	
 
 	//验证码验证
 	$Captchas = M('Captchas');
@@ -373,13 +380,35 @@ class UsersController extends RestController {
         $Captchas->status = 1;
         $Captchas->field('status')->where(array('mobile'=>$from_mobile))->save();
 
+	$Presents = M('Presents');
+	$Bills = M('Bills');
+
+	$trans_flag = true;	
+	//开启事务 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	$Users->startTrans();
-	$rs1 = $Users->where(array('user_id'=>$from_user_id))->setDec('count', $gold);
-	$rs2 = $Users->where(array('user_id'=>$to_user_id))->setInc('count', intval($gold * C('PRESENT_COMMISSION')) );
-	if($rs1 === false || $rs2 === false) {
+
+	//减去转赠者的金币数量
+	$Users->where(array('user_id'=>$from_user_id))->setDec('count', $from_gold) === false ? $trans_flag = false : 1;
+
+
+	//增加被转赠者的金币数量
+	$Users->where(array('user_id'=>$to_user_id))->setInc('count', $gold ) === false ? $trans_flag = false : 1;
+
+	//转赠表添加一行记录
+	$present_id = $Presents->add(array('from_user_id'=>$from_user_id, 'to_user_id'=>$to_user_id, 'count'=>$gold));
+
+	if($present_id === false) {
+	    $trans_flag = false;
+	} else {
+	    $Bills->add(array('user_id'=>$from_user_id, 'type'=>0, 'in'=>0, 'golds'=>$from_gold, 'ref_id'=>$present_id)) === false ? $trans_flag = false : 1;    
+	    $Bills->add(array('user_id'=>$to_user_id, 'type'=>0, 'golds'=>$gold, 'ref_id'=>$present_id)) === false ? $trans_flag = false : 1;    
+	}
+
+	if($trans_flag === false) {
 	    $Users->rollback();
             $this->response(array('code'=>-7, 'info'=>'转赠金币失败', 'data'=>null), 'json');
 	} else {
+	    //提交事务 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 	    $Users->commit();
             $this->response(array('code'=>0, 'info'=>'转增金币成功', 'data'=>null), 'json');
 	}
@@ -412,12 +441,191 @@ class UsersController extends RestController {
 	$car_2 = C('CAR_PRICE_2');
 	$car_3 = C('CAR_PRICE_3');
 	$user_data = $Users->query("select user_id,name,count,name,avatar,car_1,car_2,car_3 from users where city = '广州' order by car_1 * $car_1 + car_2 * $car_2 + car_3 * $car_3 desc limit 30;");
-	S($city.'rank'.$type, $user_data, 60 * 30);
         $this->response(array('code'=>0, 'info'=>'获取排行榜成功', 'data'=>$user_data), 'json');
 		
 
     }
 
+    /**
+     * 获取通知
+     * GET host/notices/{$id}
+     * @access public 
+     * @param int $id 为0 则获取最新的十条，否则获取present_id比$id小的十条
+     * @return json
+     */
+    public function getNotices() {
+  	$Users = D('Users');
+        if(!$Users->acc()) {
+            //用户尚未登录，返回错误
+            $this->response(array('code'=>-1, 'info'=>'用户尚未登录','data'=>null), 'json');
+        }
+
+	$id = intval(I('id'));
+
+	$Presents = M('Presents');
+	if($id == 0) {
+	    $present_data = $Presents->join('users ON from_user_id = users.user_id')->field('name,presents.*')->where(array('to_user_id'=>cookie('user_id'), 'is_del'=>0))->order('present_id desc')->limit(10)->select();	
+	} else {
+	    $present_data = $Presents->join('users ON from_user_id = users.user_id')->field('name,presents.*')->where(array('to_user_id'=>cookie('user_id'), 'present_id'=>array('lt', $id), 'id_del'=>0))->order('present_id desc')->limit(10)->select();	
+	}
+		
+        $this->response(array('code'=>0, 'info'=>'获取通知成功','data'=>$present_data), 'json');
+
+    }
+
+
+    /**
+     * 删除通知，实际数据库把该记录删除标志位置1，不实际删除
+     * PUT host/notices
+     * @access public 
+     * @param present_id
+     * @return json
+     */
+    public function delNotice() {
+        $Users = D('Users');
+        if(!$Users->acc()) {
+            //用户尚未登录，返回错误
+            $this->response(array('code'=>-1, 'info'=>'用户尚未登录','data'=>null), 'json');
+        }
+
+        $present_id = I('present_id');
+        $Presents = M('Presents');
+        //这里失败的原因有present_id是个错误的id，present_id所指向的记录不是cookie('user_id')所拥有的通知，数据库操作失败
+        if( !$Presents->where(array('present_id'=>$present_id, 'to_user_id'=>cookie('user_id')))->save(array('is_del'=>1) )) {
+            $this->response(array('code'=>-2, 'info'=>'删除通知失败','data'=>null), 'json');
+        }
+
+        $this->response(array('code'=>0, 'info'=>'删除通知成功','data'=>null), 'json');
+        
+
+    }
+
+    /**
+     * 获取手机充值信息
+     * GET /recharges
+     * @access public
+     * @return json
+     */
+    public function getRecharges() {
+        $Users = D('Users');
+        if(!$Users->acc()) {
+            $this->response(array('code'=>-1, 'info'=>'用户尚未登录','data'=>null), 'json');
+        }
+	$sum = C('RECHARGE_SUM');
+	
+	$recharge_data = array();
+	$data = array();
+
+	for($i = 0; $i < $sum; ++$i) {
+
+	    $data['type'] = C('RECHARGE_'. $i .'_TYPE');
+	    $data['price'] = C('RECHARGE_' .$i. '_PRICE');          
+	    $data['goods'] = C('RECHARGE_' .$i. '_GOODS');
+
+	    $recharge_data[] = $data;
+	}
+
+	
+        $this->response(array('code'=>0, 'info'=>'获取充值信息成功','data'=>$recharge_data), 'json');
+
+    }
+
+    /**
+     * POST /recharge
+     * 充值话费或者流量
+     * @ccess public
+     * @param int id 充值的id
+     * @param string captcha 验证码 
+     *
+     */
+    public function recharge() {
+        $Users = D('Users');
+        //if(!$Users->acc()) {
+        //    $this->response(array('code'=>-1, 'info'=>'用户尚未登录','data'=>null), 'json');
+        //}
+
+	$id = intval(I('id'));	
+	$captcha = I('captcha');
+
+	$type  = C('RECHARGE_' .$id. '_TYPE');
+	$price = C('RECHARGE_' .$id. '_PRICE');
+	$goods = C('RECHARGE_' .$id. '_GOODS');
+
+
+	if($type === NULL || $price === NULL || $goods === NULL) {
+            $this->response(array('code'=>-2, 'info'=>'充值信息错误','data'=>null), 'json');
+	}
+
+	$user_id = cookie('user_id');
+	$count = $Users->where(array('user_id'=>$user_id))->getField('count');
+	if($count < $price) {
+            $this->response(array('code'=>-3, 'info'=>'金币不足', 'data'=>null), 'json');
+	}
+
+
+	//验证码验证
+	$mobile = $Users->where(array('user_id'=>$user_id))->getField('mobile');
+	$Captchas = M('Captchas');
+        $data = $Captchas->field('captcha, expires_at, status')->where(array('mobile'=>$mobile))->find();
+        //验证码错误
+        if($captcha != $data['captcha']) {
+            $this->response(array('code'=>-5, 'info'=>'验证码错误', 'data'=>null), 'json');
+        } else if(time() > strtotime($data['expires_at'])  || $data['status'] == '1') {
+            //验证码过期 或者已经用过
+            $this->response(array('code'=>-6, 'info'=>'验证码过期', 'data'=>null), 'json');
+        }
+        //更改验证码status并且保存
+        $Captchas->status = 1;
+        $Captchas->field('status')->where(array('mobile'=>$mobile))->save();
+
+	$Bills     = M('Bills');
+	$Recharges = M('Recharges');
+	$trans_flag = true;
+	//开启事务 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	$Recharges->startTrans();
+	$Users->where(array('user_id'=>$user_id))->setDec('count', $price) === false ? $trans_flag = false : 1;	
+	$recharge_id = $Recharges->add(array('user_id'=>$user_id, 'type'=>$type, 'golds'=>$price, 'goods'=>$goods));
+
+	if($recharge_id === false) {
+	    $trans_flag = false;
+	} else {
+	    $Bills->add(array('type'=>3, 'golds'=>$price, 'ref_id'=>$recharge_id, 'in'=>0, 'user_id'=>$user_id)) === false ? $trans_flag = false : 1;
+	}
+	if(!$trans_flag) {
+	    $Recharges->rollback();
+            $this->response(array('code'=>-4, 'info'=>'充值失败', 'data'=>null), 'json');
+	} else {
+	    //提交事务<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	    $Recharges->commit();
+            $this->response(array('code'=>0, 'info'=>'充值成功', 'data'=>null), 'json');
+	}
+    }
+
+    /**
+     * 获取收支
+     * GET host/bills/{bill_id} 
+     * @access public
+     * @param bill_id 为0时，返回最新的十条，不为0时，返回小于该bill_id的十条
+     * @return json
+     */
+    public function getBills() {
+        $Users = D('Users');
+        if(!$Users->acc()) {
+            $this->response(array('code'=>-1, 'info'=>'用户尚未登录','data'=>null), 'json');
+        }
+	
+	$bill_id = intval(I('bill_id'));
+
+	$Bills = M('Bills');
+	if($bill_id == 0) {
+	    $bill_data = $Bills->where(array('user_id'=>cookie('user_id')))->order('bill_id desc')->limit(10)->select();
+	} else {
+	    $bill_data = $Bills->where(array('user_id'=>cookie('user_id'), 'bill_id'=>array('lt', $bill_id)))->order('bill_id desc')->limit(10)->select();
+	}
+
+	
+        $this->response(array('code'=>0, 'info'=>'获取收支成功','data'=>$bill_data), 'json');
+    }
 
     /**
      * 用户注销
@@ -430,15 +638,31 @@ class UsersController extends RestController {
     }
     
     public function test1() {
-	define('KILLER', 'killer');
-	echo KILLER;
+	$rsa = new \Home\Tool\RsaTool();
+	$data['name'] = 'Killer';
+	$data['age']  = '22';
+	$privEncrypt = $rsa->privEncrypt(json_encode($data));
+	echo '私钥加密后:'.$privEncrypt.'<br>';
+
+	$publicDecrypt = $rsa->publicDecrypt($privEncrypt);
+	echo '公钥解密后:'.$publicDecrypt.'<br>';
+
+	$publicEncrypt = $rsa->publicEncrypt(json_encode($data));
+	echo '公钥加密后:'.$publicEncrypt.'<br>';
+
+	$privDecrypt = $rsa->privDecrypt($publicEncrypt);
+	echo '私钥解密后:'.$privDecrypt.'<br>';
     }
 
     public function test2() {
-	$siteinfo_file = './Common/Conf/commission.php';
-	$config = array('COMMISSION_FIRST'=>'0.6');
-	$result = file_put_contents($siteinfo_file, "<?php\nreturn " . var_export($config, true).';');
-	echo $result;
+	$Digs = M('Digs');
+	$Users = M('Users');
+	$Cars = M('Cars');
+	$Bills = M('Bills');	
+
+	$Users->where(array('user_id'=>4))->find();
+	$Users->car_3 = 1;
+	$Users->save();
     }
     
 }

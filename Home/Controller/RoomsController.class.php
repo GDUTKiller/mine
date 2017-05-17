@@ -4,6 +4,17 @@ use Think\Controller\RestController;
 
 class RoomsController extends RestController {
 
+    /**
+     * 初始化，确认用户是否登录
+     */
+    public function _initialize() {
+        $Users = D('Users');
+        if(!$Users->acc()) {
+            $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
+        }
+        
+    }
+
 
     /**
      * GET host/rooms/{room_id}
@@ -15,10 +26,6 @@ class RoomsController extends RestController {
 	$room_id = I('room_id');	
 	$Rooms = M('Rooms');
 
-	$Users = D('Users');
-	if(!$Users->acc()) {
-	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
-	}
 	if(!$Rooms->where(array('room_id'=>$room_id))->find()) {
             $this->response(array('code'=>-2, 'info'=>'该房间不存在', 'data'=>null), 'json');
 	}
@@ -35,10 +42,6 @@ class RoomsController extends RestController {
      * @return json
      */
     public function joinRoom() {
-	$Users = D('Users');
-	if(!$Users->acc()) {
-	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
-	}
        
 	//没有传入car_id参数
 	$car_id = I('car_id'); 
@@ -69,7 +72,7 @@ class RoomsController extends RestController {
 	    $this->response(array('code'=>-6, 'info'=>'该矿车耐久度为0', 'data'=>null), 'json');
 	}
 		
-	$car_type = $car_data['car_type'];
+	$car_type = intval($car_data['car_type']);
 	
 	$Rooms = M('Rooms');
 	$room_id = I('room_id');
@@ -119,7 +122,7 @@ class RoomsController extends RestController {
 	$rs3 = $Cars->where(array('car_id'=>$car_id))->save(array('car_status'=>1));
 	
 	//新增矿车挖矿表
-	$rs4 = $Digs->data(array('room_id'=>$room_id, 'car_id'=>$car_id))->add();
+	$rs4 = $Digs->data(array('room_id'=>$room_id, 'car_id'=>$car_id, 'user_id'=>cookie('user_id')))->add();
 	//设置挖矿的更新时间
 	$Digs->where(array('dig_id'=>$rs4))->save(array('dig_update'=>date('YmdHis')));	
 	if($flag || $rs1 === false || $rs2 === false || $rs3 === false || $rs4 === false ) {
@@ -135,10 +138,6 @@ class RoomsController extends RestController {
     /**
      */
     public function setChatRoomId() {
-	$Users = D('Users');
-	if(!$Users->acc()) {
-	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
-	}
 	
 	$room_id = I('room_id');
 	$chat_room_id = I('chat_room_id');
@@ -175,13 +174,9 @@ class RoomsController extends RestController {
      * @return json
      */    
     public function quitRoom() {
-	$Users = D('Users');
-	if(!$Users->acc()) {
-	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
-	}
 	
-	$car_id = I('car_id') + 0;
-	$room_id = I('room_id') + 0;
+	$car_id = intval(I('car_id'));
+	$room_id = intval(I('room_id'));
 
 	$Cars = M('Cars');
 	if(!$Cars->where(array('car_id'=>$car_id))->find()) {
@@ -210,25 +205,39 @@ class RoomsController extends RestController {
 	    $this->response(array('code'=>-6, 'info'=>"该矿车已退出房间{$room_id}", 'data'=>null), 'json');
 	}	
 	
+	$Bills = M('Bills');
+	$trans_flag = true;
 	//开启事务>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	$Rooms->startTrans();
 	
-	$Rooms->where(array('room_id'=>$room_id))->setDec('people_num');
+	$Rooms->where(array('room_id'=>$room_id))->setDec('people_num') === false ? $trans_flag = false : 1;
 	//房间状态设置为挖掘(room_status=1)
-	$Rooms->where(array('room_id'=>$room_id))->save(array('room_status'=>1));
+	$Rooms->where(array('room_id'=>$room_id))->save(array('room_status'=>1)) === false ? $trans_flag = false : 1;
 
 	$people_num = $Rooms->where(array('room_id'=>$room_id))->getField('people_num');
 	if($people_num == 0) {
-	    $Rooms->where(array('room_id'=>$room_id))->save(array('room_status'=>0));
+	    $Rooms->where(array('room_id'=>$room_id))->save(array('room_status'=>0)) === false ? $trans_flag = false : 1;
 	}	
 	//设置矿车状态为空闲(car_status = 0)
-	$Cars->where(array('car_id'=>$car_id))->save(array('car_status'=>0 ) );
+	$Cars->where(array('car_id'=>$car_id))->save(array('car_status'=>0 ) ) === false ? $trans_flag = false : 1;
 
 	//设置挖矿状态为完成(dig_status=2)
-	$Digs->where(array('car_id'=>$car_id, 'room_id'=>$room_id, 'dig_status'=>1))->save(array('dig_status'=>2, 'dig_end'=>date('YmdHis')));
-	$Rooms->commit(); //提交事务<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	$Digs->where(array('car_id'=>$car_id, 'room_id'=>$room_id, 'dig_status'=>1))->save(array('dig_status'=>2, 'dig_end'=>date('YmdHis'))) === false ? $trans_flag = false : 1;
+
+	//获取此次挖矿信息，添加收入支出表
+	$t_dig_data = $Digs->where(array('car_id'=>$car_id, 'room_id'=>$room_id, 'dig_status'=>2))->order('dig_id desc')->find();
+	if($t_dig_data['dig_count'] > 0) {
+	    $Bills->add(array('user_id'=>$t_dig_data['user_id'], 'ref_id'=>$t_dig_data['dig_id'], 'type'=>2,  'golds'=>$t_dig_data['dig_count'])) === false ? $trans_flag = false : 1;	
+	}
+
+	if($trans_flag === false ) {
+	    $Rooms->rollback(); 
+ 	    $this->response(array('code'=>-7, 'info'=>"退出房间成功", 'data'=>null), 'json');
+	} else {
+	    $Rooms->commit(); //提交事务<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ 	    $this->response(array('code'=>0, 'info'=>"退出房间成功", 'data'=>null), 'json');
+	}
 	    
- 	$this->response(array('code'=>0, 'info'=>"退出房间成功", 'data'=>null), 'json');
 	
     }
 
@@ -237,10 +246,6 @@ class RoomsController extends RestController {
      * 获取用户加入的房间
      */
     public function getRooms() {
-	$Users = D('Users');
-	if(!$Users->acc()) {
-	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
-	}
 
 	$Cars = M('Cars');	
 	//获取用户的矿车id
@@ -266,6 +271,11 @@ class RoomsController extends RestController {
 
 	for($i = 0; $i < 4; ++$i) {
 	    $dig_data['zone' . $i] = array();
+	}
+
+	$Cars->where(array('user_id'=>cookie('user_id'), 'car_type'=>0))->find();
+	if($Cars->durability == 0) {
+	    $dig_data['status'][0] = 0;
 	}
 
 	$Rooms = M('Rooms');
@@ -310,12 +320,15 @@ class RoomsController extends RestController {
  	$this->response(array('code'=>0, 'info'=>"获取房间成功", 'data'=>$dig_data), 'json');
     }
 
-
+    /**
+     * 查看本次挖矿信息，并刷新
+     * host/rooms/{room_id}/{car_id}
+     * @access public 
+     * @param room_id 长度必须四位
+     * @car_id int 矿车id
+     * @return json
+     */
     public function getRoom() {
-	$Users = D('Users');
-	if(!$Users->acc()) {
-	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
-	}
 
 	$room_id = I('room_id');
 	$car_id = I('car_id');
@@ -326,7 +339,7 @@ class RoomsController extends RestController {
 	
 	$room_id += $car_type * 10000;
 
-	$this->refresh($room_id);
+	$this->_refresh($room_id);
 
 	$Rooms = M('Rooms');
 	$Digs = M('Digs');
@@ -356,8 +369,14 @@ class RoomsController extends RestController {
     }
 
 	
-
-    private function refresh($room_id) {
+    /**
+     * 刷新房间
+     * @access private
+     * @param $room_id
+     * @return 
+     *
+     */
+    private function _refresh($room_id) {
 	$Rooms = M('Rooms');
 
 	$room_data = $Rooms->where(array('room_id'=>$room_id))->find();
@@ -368,18 +387,19 @@ class RoomsController extends RestController {
 	}
 
 	//现在时间的时间戳
-	$now_time = strtotime(date('YmdHis')); 
+	$now_time = time(); 
 
 	//当前时间减去上次刷新时间大于刷新间隔，则刷新
 	if( $now_time - strtotime($room_data['update_time']) >= C('ROOM_INTERVAL') ) {
 	    $Cars = M('Cars');
 	    $Digs = M('Digs');
 	    $Users = M('Users');
+ 	    $Bills = M('Bills');	    
 
 	    //开启事务>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	    $Rooms->startTrans();	    
 	    
-	    //防止高并发情况下，重复刷新，这里对房间使用排他锁，并再次判断上次刷新时间
+	    //防止高并发情况下，重复刷新，或者用户对房间进行其他操作，这里对房间使用排他锁，并再次判断上次刷新时间
 	    $data = $Rooms->query("SELECT * FROM rooms WHERE room_id = '%d' for update", $room_id);
 	    $update_time = $data[0]['update_time'];
 
@@ -431,6 +451,36 @@ class RoomsController extends RestController {
 			$rate = 0.2;
 		    } else {
 			$rate = 0;
+			/**
+			2017-5-16 10:33
+			今天给房间刷新加上功能，当矿车耐久度为0时，将该矿车退出房间。突然发现，我以前对一个表进行更新时，
+			当一行记录中的一个字段变化时，就进行表查询，结果是频繁的进行查询，正确的做法应当是，当一行记录应当
+			更新的字段都更新后，统一写入
+			*/
+			$Rooms->where(array('room_id'=>$room_id))->find();
+			//房间人数减1
+			$Rooms->people_num--;
+			//房间状态设置为挖掘(room_status=1)
+			$Rooms->room_status = 1;
+			if($Rooms->people_num == 0) {
+			    $Rooms->room_status = 0;
+			}	
+			$Rooms->save() === false ? $trans_flag = false : 1;
+
+			//设置矿车状态为空闲(car_status = 0)
+			$Cars->where(array('car_id'=>$car_id))->save(array('car_status'=>0 ) ) === false ? $trans_flag = false : 1;
+
+			//设置挖矿状态为完成(dig_status=2)
+			$Digs->where(array('car_id'=>$car_id, 'room_id'=>$room_id, 'dig_status'=>1))->save(array('dig_status'=>2, 'dig_end'=>date('YmdHis'))) === false ? $trans_flag = false : 1;
+
+			//获取此次挖矿信息，添加收入支出表
+			$t_dig_data = $Digs->where(array('car_id'=>$car_id, 'room_id'=>$room_id, 'dig_status'=>2))->order('dig_id desc')->find();
+			if($t_dig_data['dig_count'] > 0) {
+			    $Bills->add(array('user_id'=>$t_dig_data['user_id'], 'ref_id'=>$t_dig_data['dig_id'], 'type'=>2,  'golds'=>$t_dig_data['dig_count'])) === false ? $trans_flag = false : 1;	
+			}
+
+			//跳出此次循环
+			continue;
 		    }
 
 		    //此次刷新，该矿车应当挖到的挖矿数量，为挖矿速率 乘以挖矿次数$times 乘以金币获取比例$rate 乘以$buff
@@ -483,12 +533,21 @@ class RoomsController extends RestController {
 		$Rooms->where(array('room_id'=>$room_id))->save(array('update_time'=>date('YmdHis'))) === false ? $trans_flag = false : 1;
 		//房间金币数量为空，重置房间，设置矿车状态为空闲，设置挖矿状态为完成
 		if($room_flag) {
+
+		    //$dig_data 重新查询，因为可能某台矿车耐久度为0后，已经退出了房间，dig_status已置2
+		    $dig_data = $Digs->where(array('room_id'=>$room_id, 'dig_status'=>1) )->select();				
 		    foreach($dig_data as $dig) {
 			$car_id = $dig['car_id'];
 			//设置矿车状态
 			$Cars->where(array('car_id'=>$car_id))->save(array('car_status'=>0)) === false ? $trans_flag = false : 1;
 			//设置挖矿状态，结束时间
 			$Digs->where(array('car_id'=>$car_id, 'room_id'=>$room_id, 'dig_status'=>1))->save(array('dig_status'=>2, 'dig_end'=>date('YmdHis'))) === false ? $trans_flag = false : 1;
+
+			//获取此次挖矿信息，添加收入支出表
+			$t_dig_data = $Digs->where(array('car_id'=>$car_id, 'room_id'=>$room_id, 'dig_status'=>2))->order('dig_id desc')->find();
+			if($t_dig_data['dig_count'] > 0) {
+		  	    $Bills->add(array('user_id'=>$t_dig_data['user_id'], 'ref_id'=>$t_dig_data['dig_id'], 'type'=>2,  'golds'=>$t_dig_data['dig_count'])) === false ? $trans_flag = false : 1;	
+			}
 		    }
 
 		    //设置房间金币数量，状态，人数
