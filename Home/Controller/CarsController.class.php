@@ -66,9 +66,20 @@ class CarsController extends RestController {
      * @return json
      */
     public function buyCar() {
-        $car_type = intval(I('car_type')) ;
-	$gold_buy = intval(I('gold_buy'));	
-	$captcha = I('captcha');
+	
+	$rsa = new \Home\Tool\RsaTool();
+	$privDecrypt = $rsa->privDecrypt(I('data'));
+	if($privDecrypt === NULL)
+	    $this->response(array('code'=>-10, 'info'=>'传入的加密字符串有误', 'data'=>null), 'json');
+	$json_array = json_decode($privDecrypt, true);	    
+	$car_type = intval($json_array['car_type']);
+	$gold_buy = intval($json_array['gold_buy']);
+	$captcha = $json_array['captcha'];
+	
+
+        //$car_type = intval(I('car_type')) ;
+	//$gold_buy = intval(I('gold_buy'));	
+	//$captcha = I('captcha');
 
 
         if($car_type != 1 && $car_type != 2 && $car_type != 3) {
@@ -179,10 +190,19 @@ class CarsController extends RestController {
     public function presentCar() {
 	$Users = M('Users');
 
+	$rsa = new \Home\Tool\RsaTool();
+	$privDecrypt = $rsa->privDecrypt(I('data'));
+	if($privDecrypt === NULL)
+	    $this->response(array('code'=>-10, 'info'=>'传入的加密字符串有误', 'data'=>null), 'json');
+	$json_array = json_decode($privDecrypt, true);	    
+	$car_id = intval($json_array['car_id']);
+	$to_mobile = $json_array['mobile'];
+	$captcha = $json_array['captcha'];
+	
 	$from_user_id = cookie('user_id');	
-	$car_id = I('car_id');
-	$to_mobile = I('mobile');
-	$captcha = I('captcha');
+	//$car_id = I('car_id');
+	//$to_mobile = I('mobile');
+	//$captcha = I('captcha');
 
 	$from_mobile = $Users->where(array('user_id'=>$from_user_id))->getField('mobile'); 
 
@@ -190,11 +210,11 @@ class CarsController extends RestController {
 	
 	$car_data = $Cars->where(array('user_id'=>$from_user_id, 'car_id'=>$car_id))->find();
 	if($car_data == NULL) {
-	    $this->response(array('code'=>-2, 'info'=>'用户并不拥有该矿车', 'data'=>null), 'json');
+	    $this->response(array('code'=>-2, 'info'=>'您并不拥有该矿车', 'data'=>null), 'json');
 	}
 
-	if($car_data['car_status'] == 1) {
-	    $this->response(array('code'=>-3, 'info'=>'该矿车正在挖矿中，不能转赠', 'data'=>null), 'json');
+	if($car_data['car_status'] != 0) {
+	    $this->response(array('code'=>-3, 'info'=>'该矿车正在使用中，不能转赠', 'data'=>null), 'json');
 	}
 
 	$car_type = $car_data['car_type'];

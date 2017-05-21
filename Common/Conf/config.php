@@ -24,14 +24,14 @@ return array(
         array('/^avatars$/', 'Home/Users/upload', 'status=1', array('method'=>'post')),
         // POST session 登录
         array('/^sessions$/', 'Home/Users/login', '', array('method'=>'post')),
-        // DELETE session 注销
-        array('/^sessions$/', 'Home/Users/logout', '', array('method'=>'delete')),
 
 
         // POST ids 实名认证
         array('/^ids$/', 'Home/Users/identify', '', array('method'=>'post')),
+	// GET /presents 转赠的手续，最小转赠金币数	
+        array('/^presents$/', 'Home/Users/getPresents', '', array('method'=>'get')),
         // PUT host/golds 转赠金币
-        array('/^golds$/', 'Home/Users/changeCount', '', array('method'=>'put')),
+        array('/^golds$/', 'Home/Users/presentGolds', '', array('method'=>'put')),
         // GET host/notices/{$id} 获取通知
         array('/^notices\/(\d+)$/', 'Home/Users/getNotices?id=:1', '', array('method'=>'get')),
         // PUT host/notices/ 删除通知
@@ -42,17 +42,15 @@ return array(
         array('/^recharges/', 'Home/Users/getRecharges', '', array('method'=>'get')),
         // POST /recharge  充值
         array('/^recharge$/', 'Home/Users/recharge', '', array('method'=>'post')),
-
         // GET host/ranks/{type} 获取排行榜
         array('/^ranks\/(\d)$/', 'Home/Users/getRank?type=:1', '', array('method'=>'get')),
-
         // GET host/commissions/  获取提成
         array('/^commissions\/(\d+)\/(\d+)$/', 'Home/Commissions/getCommissions?user_id=:1&page=:2', '', array('method'=>'get')),
-
         // POST captchas 发送手机验证码
         array('/^captchas$/', 'Home/Captchas/send', 'status=1', array('method'=>'post')),
 
-
+        // POST test 测试接口
+        array('/^test$/', 'Home/Users/test', '', array('method'=>'post')),
 
         //发表动态的图片 POST host/arts/pics
         array('/^arts\/pics$/', 'Home/Arts/upload', '', array('method'=>'post') ),

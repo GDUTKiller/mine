@@ -320,23 +320,46 @@ class UsersController extends RestController {
     }
 
     /**
+     * 获取转赠的手续费，最小转赠金币数
+     * GET /presents
+     * @access public
+     * @return json
+     */
+    public function getPresents() {
+	$data['least'] = C('PRESENT_LEAST');
+	$data['commission'] = C('PRESENT_COMMISSION');
+        $this->response(array('code'=>0, 'info'=>'获取转赠信息成功','data'=>$data), 'json');
+    }
+
+
+    /**
      * 转赠金币
      * @access public 转赠金币 PUT host/golds
      * @param int gold 要转赠的金币数
      * @param string mobile 被转赠者的手机号
      * @param string captcha 验证码
      */
-    public function changeCount() {
+    public function presentGolds() {
   	$Users = D('Users');
         if(!$Users->acc()) {
             //用户尚未登录，返回错误
             $this->response(array('code'=>-1, 'info'=>'用户尚未登录','data'=>null), 'json');
         }
 
+	$rsa = new \Home\Tool\RsaTool();
+	$privDecrypt = $rsa->privDecrypt(I('data'));
+	if($privDecrypt === NULL)
+	    $this->response(array('code'=>-10, 'info'=>'传入的加密字符串有误', 'data'=>null), 'json');
+	$json_array = json_decode($privDecrypt, true);	    
+	$gold = intval($json_array['gold']);
+	$to_mobile = $json_array['mobile'];
+	$captcha = $json_array['captcha'];
+	
+
 	$from_user_id = cookie('user_id');	
-	$gold = intval(I('gold'));
-	$to_mobile = I('mobile');
-	$captcha = I('captcha');
+	//$gold = intval(I('gold'));
+	//$to_mobile = I('mobile');
+	//$captcha = I('captcha');
 
 	if($gold < C('PRESENT_LEAST')) {
 	    $this->response(array('code'=>-2, 'info'=>"要转赠的金币最少为" . C('PRESENT_LEAST'), 'data'=>null), 'json');
@@ -437,9 +460,9 @@ class UsersController extends RestController {
 
 	
 
-	$car_1 = C('CAR_PRICE_1');
-	$car_2 = C('CAR_PRICE_2');
-	$car_3 = C('CAR_PRICE_3');
+	$car_1 = C('CAR_RMB_PRICE_1');
+	$car_2 = C('CAR_RMB_PRICE_2');
+	$car_3 = C('CAR_RMB_PRICE_3');
 	$user_data = $Users->query("select user_id,name,count,name,avatar,car_1,car_2,car_3 from users where city = '广州' order by car_1 * $car_1 + car_2 * $car_2 + car_3 * $car_3 desc limit 30;");
         $this->response(array('code'=>0, 'info'=>'获取排行榜成功', 'data'=>$user_data), 'json');
 		
@@ -627,20 +650,19 @@ class UsersController extends RestController {
         $this->response(array('code'=>0, 'info'=>'获取收支成功','data'=>$bill_data), 'json');
     }
 
-    /**
-     * 用户注销
-     * DELETE请求 host/session
-     * @return [type] [description]
-     */
-    public function logout() {
-        D('Users')->revoke();
-        $this->response(array('code'=>0, 'info'=>'注销成功', 'data'=>null), 'json');
-    }
     
-    public function test1() {
+    public function test() {
 	$rsa = new \Home\Tool\RsaTool();
-	$data['name'] = 'Killer';
-	$data['age']  = '22';
+
+	$data = I('data');
+	$privDecrypt = $rsa->privDecrypt('cuMlfr/SsGHhOp5QseBedpogpbt3EeiK18vU1pLMMKnp/DbpYJqsgFzLORILjXtA1LRaYgjTtICx3oxpZpuz7mw5CeBULk4MSJ4bK2CPvGhORTQ9s/Dg1VylK18vE+HyPk11dDdHni0wZKxo6WgUSA+pj4QP2CaNOEGnirt88WU=');
+	var_dump($privDecrypt);
+    }
+
+    public function test2() {
+	$rsa = new \Home\Tool\RsaTool();
+	$data['name'] = 'Tom';
+	$data['age']  = '20';
 	$privEncrypt = $rsa->privEncrypt(json_encode($data));
 	echo '私钥加密后:'.$privEncrypt.'<br>';
 
@@ -652,17 +674,7 @@ class UsersController extends RestController {
 
 	$privDecrypt = $rsa->privDecrypt($publicEncrypt);
 	echo '私钥解密后:'.$privDecrypt.'<br>';
-    }
-
-    public function test2() {
-	$Digs = M('Digs');
-	$Users = M('Users');
-	$Cars = M('Cars');
-	$Bills = M('Bills');	
-
-	$Users->where(array('user_id'=>4))->find();
-	$Users->car_3 = 1;
-	$Users->save();
+	var_dump(json_decode($privDecrypt,true)['name222']);
     }
     
 }
