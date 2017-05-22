@@ -13,6 +13,7 @@ class CommentsController extends RestController {
      * @return json
      */
     public function add() {
+	C('DB_CHARSET', 'utf8mb4');
 	$Users = D('Users');
 	if(!$Users->acc()) {
 	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
@@ -107,6 +108,7 @@ class CommentsController extends RestController {
      * @return json 
      */
     public function getComments() {
+	C('DB_CHARSET', 'utf8mb4');
         $Users = D('Users');
         if(!$Users->acc()) {
             $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');

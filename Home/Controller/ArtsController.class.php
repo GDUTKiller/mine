@@ -45,6 +45,7 @@ class ArtsController extends RestController {
      * @return json
      */
     public function add() {
+	C('DB_CHARSET', 'utf8mb4');
 	$Users = D('Users');
 	if(!$Users->acc()) {
 	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
@@ -106,6 +107,7 @@ class ArtsController extends RestController {
      * @return json
      */
     public function getArts() {
+	C('DB_CHARSET', 'utf8mb4');
   	$Users = D('Users');
 	if(!$Users->acc()) {
 	    $this->response(array('code'=>-1, 'info'=>'用户尚未登录', 'data'=>null), 'json');
@@ -140,6 +142,9 @@ class ArtsController extends RestController {
 	    $comm_data = $Comments->query($sql, $v['art_id']);
 	    // $comm_data = $Comments->join('users ON comments.user_id = users.user_id')->field('name,avatar,comments.*')->order('pubtime ASC')->where(array('comments.art_id'=>$v['art_id']))->limit(0, 3)->select();
 	    $data[$k]['comments'] = $comm_data;
+
+	    //支持表情
+	    //$data[$k]['content'] = json_decode($data[$k]['content']);
 	}
 	$this->response(array('code'=>0, 'info'=>'获取动态成功', 'data'=>$data), 'json');
 
