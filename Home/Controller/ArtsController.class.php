@@ -143,8 +143,6 @@ class ArtsController extends RestController {
 	    // $comm_data = $Comments->join('users ON comments.user_id = users.user_id')->field('name,avatar,comments.*')->order('pubtime ASC')->where(array('comments.art_id'=>$v['art_id']))->limit(0, 3)->select();
 	    $data[$k]['comments'] = $comm_data;
 
-	    //支持表情
-	    //$data[$k]['content'] = json_decode($data[$k]['content']);
 	}
 	$this->response(array('code'=>0, 'info'=>'获取动态成功', 'data'=>$data), 'json');
 

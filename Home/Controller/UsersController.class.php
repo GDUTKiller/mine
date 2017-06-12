@@ -652,11 +652,13 @@ class UsersController extends RestController {
 
     
     public function test() {
-	$rsa = new \Home\Tool\RsaTool();
+	//$rsa = new \Home\Tool\RsaTool();
 
-	$data = I('data');
-	$privDecrypt = $rsa->privDecrypt('cuMlfr/SsGHhOp5QseBedpogpbt3EeiK18vU1pLMMKnp/DbpYJqsgFzLORILjXtA1LRaYgjTtICx3oxpZpuz7mw5CeBULk4MSJ4bK2CPvGhORTQ9s/Dg1VylK18vE+HyPk11dDdHni0wZKxo6WgUSA+pj4QP2CaNOEGnirt88WU=');
-	var_dump($privDecrypt);
+	//$data = I('data');
+	//$privDecrypt = $rsa->privDecrypt('cuMlfr/SsGHhOp5QseBedpogpbt3EeiK18vU1pLMMKnp/DbpYJqsgFzLORILjXtA1LRaYgjTtICx3oxpZpuz7mw5CeBULk4MSJ4bK2CPvGhORTQ9s/Dg1VylK18vE+HyPk11dDdHni0wZKxo6WgUSA+pj4QP2CaNOEGnirt88WU=');
+	//var_dump($privDecrypt);
+
+echo __DIR__;
     }
 
     public function test2() {
