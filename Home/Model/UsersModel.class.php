@@ -1,13 +1,15 @@
 <?php
 namespace Home\Model;
+
 use Think\Model;
+
 class UsersModel extends Model {
     //自动验证
     protected $_validate = array(
         //新增数据时验证,即注册用户
         array('mobile', '/^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/', '手机格式错误', 1, 'regex', 1),
         array('mobile', '', '该手机号已经存在', 1, 'unique', 1),
-        array('password', '/^[0-9a-zA-Z_]{6,16}$/', '密码格式错误', 1, 'regex', 1),
+        array('password', '/^[0-9a-zA-Z_]{6,16}$/', '密码格式6到16位，由数字字母下划线组成', 1, 'regex', 1),
         array('name', '/^[\x{4e00}-\x{9fa5}a-zA-Z]{2,10}$/u', '名字由中文和英文字母组成，长度在2到10之间', 1, 'regex', 1),
 
 	//推荐码自动验证
@@ -117,6 +119,7 @@ class UsersModel extends Model {
 
     /**
      * 判断密码是否正确
+     * 执行此方法前，必须得先查找数据库中是否有mobile的记录，须先调用isExist
      * @return bool
      */
     public function checkPass($password) {
@@ -135,11 +138,14 @@ class UsersModel extends Model {
     }
 
     /**
-     * 登录
+     * 登录，若用户已经被封禁，则登录失败 
      * 设置cookie,其中user_id为用户id,token为加密字符串
      * 用户表中，保存该用户的token和token_timeout，即过期时间
      */
     public function auth() {
+        if($this->status == 1)
+	    return false;
+
         cookie('user_id', $this->user_id);
 	$user_id = $this->user_id;
 	$this->token = md5($this->user_id . $this->mobile . $this->randStr());

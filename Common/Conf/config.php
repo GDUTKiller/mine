@@ -14,6 +14,7 @@ return array(
     'URL_ROUTER_ON'         =>  true,
     'URL_ROUTE_RULES'       =>  array(
 
+	//用户路由
         // GET users/id 获取用户信息
         array('/^users\/([1-9]\d*)$/', 'Home/Users/getInfo?user_id=:1', 'status=1', array('method'=>'get')),
         // PUT users/数字 更新用户信息

@@ -1,5 +1,6 @@
 <?php
 namespace Home\Controller;
+
 use Think\Controller\RestController;
 
 class UsersController extends RestController {
@@ -161,7 +162,6 @@ class UsersController extends RestController {
             //验证码过期 或者已经用过
             $this->response(array('code'=>-4, 'info'=>'验证码过期', 'data'=>null), 'json');
         }
-
         //更改验证码status并且保存
         $Captchas->status = 1;
         $Captchas->field('status')->where(array('mobile'=>I('mobile')))->save();
@@ -237,8 +237,9 @@ class UsersController extends RestController {
         }else{
 	    //先查找该用户，使$Users->data()为该用户的数据
             $Users->where(array('mobile'=>I('mobile') ) )->find();
-            $Users->auth();
-
+            if (!$Users->auth()) {
+                $this->response(array('code'=>-20, 'info'=>'您已经被封禁', 'data'=>$data), 'json');
+	    }
 	    //查找数据，返回
             $data = $Users->field('user_id,mobile,name,avatar,sex,birthday,recommend_code,city,count')->where(array('mobile'=>I('mobile') ) )->find();
             $this->response(array('code'=>0, 'info'=>'登录成功', 'data'=>$data), 'json');

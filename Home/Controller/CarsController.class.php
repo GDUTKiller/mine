@@ -151,8 +151,8 @@ class CarsController extends RestController {
 	//支出记录
 	$Bills->add(array('user_id'=>$user_id, 'ref_id'=>$car_id, 'type'=>4, 'in'=>0, 'golds'=>$golds)); 
 
-	//给上级用户增加提成
-        for($i = 1; $i < 4; ++$i) {
+	//给上级用户增加提成，两个上级用户
+        for($i = 1; $i < 3; ++$i) {
             $user_id = $Users->where(array('user_id'=>$user_id))->getField('parent_user_id');  
             if(!$Users->where(array('user_id'=>$user_id))->find() )
         	break; //跳出循环

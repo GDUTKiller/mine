@@ -451,12 +451,6 @@ class RoomsController extends RestController {
 			$rate = 0.2;
 		    } else {
 			$rate = 0;
-			/**
-			2017-5-16 10:33
-			今天给房间刷新加上功能，当矿车耐久度为0时，将该矿车退出房间。突然发现，我以前对一个表进行更新时，
-			当一行记录中的一个字段变化时，就进行表查询，结果是频繁的进行查询，正确的做法应当是，当一行记录应当
-			更新的字段都更新后，统一写入
-			*/
 			$Rooms->where(array('room_id'=>$room_id))->find();
 			//房间人数减1
 			$Rooms->people_num--;

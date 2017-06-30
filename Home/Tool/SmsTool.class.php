@@ -1,5 +1,6 @@
 <?php
 namespace Home\Tool;
+
 class SmsTool {
     private $BASE_URL = '',
            $ACCOUNT_SID = '',
