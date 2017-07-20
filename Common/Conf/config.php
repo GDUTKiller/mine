@@ -6,6 +6,7 @@ return array(
     'DB_USER'               =>  'mine',      // 用户名
     'DB_PWD'                =>  'mine123',          // 密码
     'URL_MODEL'		    =>  1,
+    'SESSION_AUTO_START' =>false,           //关闭session
 
     //配置扩展
     'LOAD_EXT_CONFIG' => 'commission,room,car,recharge',

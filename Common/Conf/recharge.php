@@ -1,5 +1,6 @@
 <?php
 return array(
+  //手机充值
   'RECHARGE_SUM' => 6,
 
   'RECHARGE_0_TYPE' => 0,

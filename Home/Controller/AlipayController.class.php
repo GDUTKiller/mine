@@ -25,6 +25,12 @@ class AlipayController extends RestController {
             'total_amount'=> '9.88',//保留两位小数
             'product_code'=>'QUICK_MSECURITY_PAY'
         ]);
+	//$bizContent = "{" +
+	//"    \"primary_industry_name\":\"IT科技/IT软件与服务\"," +
+	//"    \"primary_industry_code\":\"10001/20102\"," +
+	//"    \"secondary_industry_code\":\"10001/20102\"," +
+	//"    \"secondary_industry_name\":\"IT科技/IT软件与服务\"" +
+	//" }";
         //**沙箱测试支付宝结束
         //实例化具体API对应的request类,类名称和接口名称对应,当前调用接口名称：alipay.trade.app.pay
         $request = new \Home\Tool\AlipayTradeAppPayRequest();
@@ -33,8 +39,12 @@ class AlipayController extends RestController {
         $request->setBizContent($bizcontent);
         //这里和普通的接口调用不同，使用的是sdkExecute
         $response = $aop->sdkExecute($request);
-        echo htmlspecialchars($response);
+        echo $response;
 
+    }
+
+    public function callback() {
+        echo 'callback';
     }
 
 

@@ -9,7 +9,6 @@ return array (
   'CAR_INTRODUCTION_1' => '性能稳定的挖矿机器，可以挖掘到一定量的金币',
   'CAR_INTRODUCTION_2' => '性能强劲的挖矿机器，可以挖掘到大量的金币',
   'CAR_INTRODUCTION_3' => '性能非常强劲的挖矿机器，可以挖掘到数量可观的金币',
-
   
 
   //对应类型矿车金币的价格

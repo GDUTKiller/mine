@@ -26,9 +26,24 @@ class UsersModel extends Model {
     protected $_auto = array(
 	//新增数据时，自动完成city字段
         array('city', 'getCity', 1, 'callback'),
+        array('province', 'getProvince', 1, 'callback'),
     );
 
+    /**
+     * 获取手机号所在省份
+     * @param post.mobile
+     */
+    public function getProvince() {
+	$Phones = M('Phones');
+	//获取手机的前七位
+	$phoneStr = substr(I('mobile'), 0, 7);
 
+ 	$province = $Phones->where(array('phone'=>$phoneStr))->getField('province');
+	if(!$province) {
+	    return '其他';
+	}
+	return $province;
+    }
     /**
      * 获取手机号所在城市
      * @param post.mobile
@@ -40,7 +55,7 @@ class UsersModel extends Model {
 
  	$city = $Phones->where(array('phone'=>$phoneStr))->getField('city');
 	if(!$city) {
-	    return '火星';
+	    return '其他';
 	}
 	return $city;
     }

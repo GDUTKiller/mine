@@ -20,7 +20,7 @@ class ArtsModel extends Model {
 	if($city) {
 	    return $city;
 	}
- 	return '火星';
+ 	return '其他';
     }
 
     public function getUserId() {

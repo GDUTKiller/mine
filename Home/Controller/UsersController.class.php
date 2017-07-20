@@ -327,8 +327,12 @@ class UsersController extends RestController {
      * @return json
      */
     public function getPresents() {
-	$data['least'] = C('PRESENT_LEAST');
-	$data['commission'] = C('PRESENT_COMMISSION');
+        $Configs = M('Configs');
+	//$data['least'] = C('PRESENT_LEAST');
+	//$data['commission'] = C('PRESENT_COMMISSION');
+        $data['least'] = $Configs->where(array('name'=>'present_least'))->getField('value');
+	$data['commission'] = $Configs->where(array('name'=>'present_commission'))->getField('value');
+
         $this->response(array('code'=>0, 'info'=>'获取转赠信息成功','data'=>$data), 'json');
     }
 
@@ -361,17 +365,19 @@ class UsersController extends RestController {
 	//$gold = intval(I('gold'));
 	//$to_mobile = I('mobile');
 	//$captcha = I('captcha');
-
-	if($gold < C('PRESENT_LEAST')) {
-	    $this->response(array('code'=>-2, 'info'=>"要转赠的金币最少为" . C('PRESENT_LEAST'), 'data'=>null), 'json');
+        $Configs = M('Configs');
+        $least = $Configs->where(array('name'=>'present_least'))->getField('value');
+	if($gold < $least) {
+	    $this->response(array('code'=>-2, 'info'=>"要转赠的金币最少为" . $least, 'data'=>null), 'json');
 	}
 	
 	//转赠者要扣除的总金币（加上手续费）
-	$from_gold = $gold + ceil($gold * C('PRESENT_COMMISSION'));
+        $present_commission = $Configs->where(array('name'=>'present_commission'))->getField('value');
+	$from_gold = $gold + ceil($gold * $present_commission);
 	//转赠者的金币
 	$origin_gold = $Users->where(array('user_id'=>$from_user_id))->getField('count'); 
 	if($from_gold > $origin_gold) {
-	    $this->response(array('code'=>-3, 'info'=>"您当前能转赠的金币数量最大为" . floor($origin_gold*(1-C('PRESENT_COMMISSION'))), 'data'=>null), 'json');
+	    $this->response(array('code'=>-3, 'info'=>"您当前能转赠的金币数量最大为" . floor($origin_gold*(1-$present_commission)), 'data'=>null), 'json');
 	}
 
 	$from_mobile = $Users->where(array('user_id'=>$from_user_id))->getField('mobile'); 
@@ -460,10 +466,15 @@ class UsersController extends RestController {
 	}
 
 	
+        $Configs = M('Configs');
+	//$car_1 = C('CAR_RMB_PRICE_1');
+	//$car_2 = C('CAR_RMB_PRICE_2');
+	//$car_3 = C('CAR_RMB_PRICE_3');
+	$car_1 = $Configs->where(array('name'=>'car_rmb_price_1'))->getField('value');
+	$car_2 = $Configs->where(array('name'=>'car_rmb_price_2'))->getField('value');
+	$car_3 = $Configs->where(array('name'=>'car_rmb_price_3'))->getField('value');
 
-	$car_1 = C('CAR_RMB_PRICE_1');
-	$car_2 = C('CAR_RMB_PRICE_2');
-	$car_3 = C('CAR_RMB_PRICE_3');
+        $Configs->where(array('name'=>'present_least'))->getField('value');
 	$user_data = $Users->query("select user_id,name,count,name,avatar,car_1,car_2,car_3 from users where city = '广州' order by car_1 * $car_1 + car_2 * $car_2 + car_3 * $car_3 desc limit 30;");
         $this->response(array('code'=>0, 'info'=>'获取排行榜成功', 'data'=>$user_data), 'json');
 		
@@ -535,16 +546,21 @@ class UsersController extends RestController {
         if(!$Users->acc()) {
             $this->response(array('code'=>-1, 'info'=>'用户尚未登录','data'=>null), 'json');
         }
-	$sum = C('RECHARGE_SUM');
-	
+        $Configs = M('Configs');
+        //C('RECHARGE_SUM');
+
+	$sum = $Configs->where(array('name'=>'recharge_sum'))->getField('value');
 	$recharge_data = array();
 	$data = array();
 
 	for($i = 0; $i < $sum; ++$i) {
 
-	    $data['type'] = C('RECHARGE_'. $i .'_TYPE');
-	    $data['price'] = C('RECHARGE_' .$i. '_PRICE');          
-	    $data['goods'] = C('RECHARGE_' .$i. '_GOODS');
+	    //$data['type'] = C('RECHARGE_'. $i .'_TYPE');
+	    //$data['price'] = C('RECHARGE_' .$i. '_PRICE');          
+	    //$data['goods'] = C('RECHARGE_' .$i. '_GOODS');
+	    $data['type'] = $Configs->where(array('name'=>'recharge_'.$i.'_type'))->getField('value');
+	    $data['price'] = $Configs->where(array('name'=>'recharge_'.$i.'_price'))->getField('value');
+	    $data['goods'] = $Configs->where(array('name'=>'recharge_'.$i.'_goods'))->getField('value');
 
 	    $recharge_data[] = $data;
 	}
@@ -564,17 +580,19 @@ class UsersController extends RestController {
      */
     public function recharge() {
         $Users = D('Users');
-        //if(!$Users->acc()) {
-        //    $this->response(array('code'=>-1, 'info'=>'用户尚未登录','data'=>null), 'json');
-        //}
+        if(!$Users->acc()) {
+            $this->response(array('code'=>-1, 'info'=>'用户尚未登录','data'=>null), 'json');
+        }
 
 	$id = intval(I('id'));	
 	$captcha = I('captcha');
-
-	$type  = C('RECHARGE_' .$id. '_TYPE');
-	$price = C('RECHARGE_' .$id. '_PRICE');
-	$goods = C('RECHARGE_' .$id. '_GOODS');
-
+        $Configs = M('Configs');
+	//$type  = C('RECHARGE_' .$id. '_TYPE');
+	//$price = C('RECHARGE_' .$id. '_PRICE');
+	//$goods = C('RECHARGE_' .$id. '_GOODS');
+        $type = $Configs->where(array('name'=>'recharge_'.$id.'_type'))->getField('value');
+	$price = $Configs->where(array('name'=>'recharge_'.$id.'_price'))->getField('value');
+	$goods = $Configs->where(array('name'=>'recharge_'.$id.'_goods'))->getField('value');
 
 	if($type === NULL || $price === NULL || $goods === NULL) {
             $this->response(array('code'=>-2, 'info'=>'充值信息错误','data'=>null), 'json');
@@ -653,13 +671,9 @@ class UsersController extends RestController {
 
     
     public function test() {
-	//$rsa = new \Home\Tool\RsaTool();
-
-	//$data = I('data');
-	//$privDecrypt = $rsa->privDecrypt('cuMlfr/SsGHhOp5QseBedpogpbt3EeiK18vU1pLMMKnp/DbpYJqsgFzLORILjXtA1LRaYgjTtICx3oxpZpuz7mw5CeBULk4MSJ4bK2CPvGhORTQ9s/Dg1VylK18vE+HyPk11dDdHni0wZKxo6WgUSA+pj4QP2CaNOEGnirt88WU=');
-	//var_dump($privDecrypt);
-
-echo __DIR__;
+       static $test = 0;
+       $test++;
+       echo $test;
     }
 
     public function test2() {

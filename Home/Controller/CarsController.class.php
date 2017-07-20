@@ -41,12 +41,26 @@ class CarsController extends RestController {
      */
     public function getCardetails() {
 	$details = array();
+	$Configs = M('Configs');
+	$UserAllowCar = M('UserAllowCar');
+	$user_car_data = $UserAllowCar->where(array('user_id'=>cookie('user_id')))->find();
 	for($i = 1; $i < 4; $i++) {
-	    $data['name'] = C('CAR_NAME_' . $i);     
-	    $data['introduction'] = C('CAR_INTRODUCTION_' . $i);     
-	    $data['rmb_price'] = C('CAR_RMB_PRICE_' . $i);     
-	    $data['gold_price'] = C('CAR_GOLD_PRICE_' . $i);     
-	    $data['allow'] = 0;
+	    //$data['name'] = C('CAR_NAME_' . $i);     
+	    $data['name'] = $Configs->where(array('name'=>'car_name_' . $i))->getField('value');     
+	    //$data['introduction'] = C('CAR_INTRODUCTION_' . $i);     
+	    $data['introduction'] = $Configs->where(array('name'=>'car_introduction_' . $i))->getField('value');     
+	    //$data['rmb_price'] = C('CAR_RMB_PRICE_' . $i);     
+	    $data['rmb_price'] = $Configs->where(array('name'=>'car_rmb_price_' . $i))->getField('value');     
+	    //$data['gold_price'] = C('CAR_GOLD_PRICE_' . $i);     
+	    $data['gold_price'] = $Configs->where(array('name'=>'car_gold_price_' . $i))->getField('value');     
+
+	    //如果没有$user_car_data，说明用户没有购买过矿车，则所有的矿车都可以购买，设置allow字段为小于现在的一个时间点
+	    //否则，则allow字段赋值数据库记录的字段值，allow字段的值小于现在的时间则表明允许购买矿车
+	    if($user_car_data == null) {
+	        $data['allow'] = '2017-06-06 06:06:06';
+	    } else {
+                $data['allow'] = $user_car_data['car_'.$i];
+	    }
  	    $details[] = $data;
 	}
 
@@ -67,24 +81,30 @@ class CarsController extends RestController {
      */
     public function buyCar() {
 	
-	$rsa = new \Home\Tool\RsaTool();
-	$privDecrypt = $rsa->privDecrypt(I('data'));
-	if($privDecrypt === NULL)
-	    $this->response(array('code'=>-10, 'info'=>'传入的加密字符串有误', 'data'=>null), 'json');
-	$json_array = json_decode($privDecrypt, true);	    
-	$car_type = intval($json_array['car_type']);
-	$gold_buy = intval($json_array['gold_buy']);
-	$captcha = $json_array['captcha'];
+	//$rsa = new \Home\Tool\RsaTool();
+	//$privDecrypt = $rsa->privDecrypt(I('data'));
+	//if($privDecrypt === NULL)
+	//    $this->response(array('code'=>-10, 'info'=>'传入的加密字符串有误', 'data'=>null), 'json');
+	//$json_array = json_decode($privDecrypt, true);	    
+	//$car_type = intval($json_array['car_type']);
+	//$gold_buy = intval($json_array['gold_buy']);
+	//$captcha = $json_array['captcha'];
+
+	$captcha = I('captcha');
+	$car_type = I('car_type');
+	$gold_buy = I('gold_buy');
 	
-
-        //$car_type = intval(I('car_type')) ;
-	//$gold_buy = intval(I('gold_buy'));	
-	//$captcha = I('captcha');
-
-
+        //矿车类型不对
         if($car_type != 1 && $car_type != 2 && $car_type != 3) {
             $this->response(array('code'=>-2, 'info'=>'请选择正确的矿车类型', 'data'=>null), 'json');
         }
+
+        //判断是否允许用户购买该矿车
+        $UserAllowCar = M('UserAllowCar');
+	$user_car_data = $UserAllowCar->where(array('user_id'=>cookie('user_id')))->find();
+	if($user_car_data != null && strtotime($user_car_data['car_'.$car_type]) > time()) {
+            $this->response(array('code'=>-15, 'info'=>'您现在还不能购买该矿车', 'data'=>null), 'json');
+	}
 
         $user_id = cookie('user_id');
 	
@@ -112,9 +132,12 @@ class CarsController extends RestController {
 
 	$trans_flag = true;
 
+        $Configs = M('Configs');
 	//金币购买
 	if($gold_buy == 1) {
-	    $golds = C('CAR_GOLD_PRICE_' . $car_type);
+	     
+	    //$golds = C('CAR_GOLD_PRICE_' . $car_type);
+	    $golds = $Configs->where(array('name'=>'car_gold_price_' . $car_type))->getField('value');
 	    if($golds > $Users->count) {
             	$this->response(array('code'=>-4, 'info'=>'您当前的金币不足以购买此矿车', 'data'=>null), 'json');
 	    }
@@ -145,6 +168,14 @@ class CarsController extends RestController {
         //购买矿车的用户id
         $car_user_id = $user_id;
 
+        //$after代表允许多少天后购买
+        $after = $Configs->where(array('name'=>'allow_buy_car_'.$car_type.'_after'))->getField('value');
+	//如果数据库里没有允许用户购买矿车的记录，则新增，否则更新
+	if($user_car_data == null) 
+            $UserAllowCar->add(array('user_id'=>cookie('user_id'), 'car_'.$car_type=>date("YmdHis",strtotime("+$after day"))));
+	else 
+            $UserAllowCar->where(array('user_id'=>cookie('user_id')))->save(array('car_'.$car_type=>date("YmdHis",strtotime("+$after day"))));
+
 	$Bills = M('Bills');
 	$Commissions = M('Commissions');
 
@@ -158,8 +189,8 @@ class CarsController extends RestController {
         	break; //跳出循环
 
 	    //提成
-	    $commission = C('COMMISSION_' . $car_type . '_' . $i); 
-
+	    //C('COMMISSION_' . $car_type . '_' . $i); 
+	    $commission = $Configs->where(array('name'=>'commission_'.$car_type .'_'.$i))->getField('value');
             $Users->where(array('user_id'=>$user_id))->setInc('count', $commission );
 
 	    //如果数据库没有该提成记录，添加新记录，否则增加该记录的count字段

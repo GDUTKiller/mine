@@ -3,7 +3,7 @@ namespace Admin\Model;
 
 use Think\Model;
 
-class AdminModel extends Model {
+class AdminsModel extends Model {
     protected $_validate = array(
         //新增数据时验证,即注册用户
         array('mobile', '/^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/', '手机格式错误', 1, 'regex', 1),
@@ -20,7 +20,7 @@ class AdminModel extends Model {
     
     /**
      * 注册
-     * @return id 
+     * @return admin_id 
      */
     public function reg(){
         $this->encPass();
@@ -59,16 +59,16 @@ class AdminModel extends Model {
 
     /**
      * 登录
-     * 设置cookie,其中user_id为用户id,token为加密字符串
+     * 设置cookie,其中admin_id为用户admin_id,token为加密字符串
      * 用户表中，保存该用户的token和token_timeout，即过期时间
      */
     public function auth() {
-        cookie('id', $this->id);
-	$id = $this->id;
-	$this->token = md5($this->id . $this->mobile . $this->randStr());
+        cookie('admin_id', $this->admin_id);
+	$admin_id = $this->admin_id;
+	$this->token = md5($this->admin_id . $this->mobile . $this->randStr());
 	$this->token_timeout = date('YmdHis',strtotime('+14 day'));	
         cookie('token', $this->token);
-	$this->field('token,token_timeout')->where(array('id'=>$id))->save();
+	$this->field('token,token_timeout')->where(array('admin_id'=>$admin_id))->save();
         return true;
     }
     
@@ -77,10 +77,10 @@ class AdminModel extends Model {
      * @return boolean
      */
     public function acc() {
-        if(empty(cookie('id')) || empty(cookie('token')) ) {
+        if(empty(cookie('admin_id')) || empty(cookie('token')) ) {
             return false;
         }
-	$this->where(array('id'=>cookie('id')))->find();
+	$this->where(array('admin_id'=>cookie('admin_id')))->find();
 	if(cookie('token') != $this->token ||  strtotime(date('YmdHis')) > strtotime($this->token_timeout)) {
 	    return false;
 	}

@@ -10,15 +10,39 @@ use Think\Controller\RestController;
 * @since          1.0 
 * @TODO 删除用户功能
 */  
-class UserController extends RestController {
+class UsersController extends RestController {
     /**
      * 初始化，确认管理员是否登录
      */
     public function _initialize() {
-        $Admin = D('Admin');
-        if(!$Admin->acc()) {
+        $this->cors();
+        $Admins = D('Admins');
+        if(!$Admins->acc()) {
             $this->response(array('code'=>-11, 'info'=>'您尚未登录', 'data'=>null), 'json');
         }
+    }
+
+    /**
+     * 解决跨域资源共享 
+     */
+    private function cors() {
+
+	$reauest_origin = $_SERVER['HTTP_ORIGIN'];
+	header('Access-Control-Allow-Origin:'.$reauest_origin);
+        header('Access-Control-Allow-Credentials:true');
+            
+        $request_method = $_SERVER['REQUEST_METHOD'];
+        if ($request_method === 'OPTIONS') {
+	    header('Access-Control-Allow-Methods:GET, POST, OPTIONS, PUT');
+	    header('Access-Control-Max-Age:1728000');
+	    header('Content-Type:text/plain charset=UTF-8');
+	    header('Content-Length: 0',true);
+            header('status: 204');
+            header('HTTP/1.1 204 No Content');
+	    //此处return因为options请求不需要返回数据
+ 	    return ;	      							      
+        }
+    
     }
 
     /**
@@ -62,7 +86,7 @@ class UserController extends RestController {
     /**
      * 修改用户
      * @access public
-     * @param int user_id 查询哪个城市
+     * @param int user_id 修改的用户id 
      * @param int status  修改用户状态为0正常，1封禁 
      * @return json 
      */
@@ -71,8 +95,12 @@ class UserController extends RestController {
 	$status = I('status');
 	
 	$Users = M('Users');
-        $Users->where(array('user_id'=>$user_id))->save(array('status'=>$status, 'token_timeout'=>'20170101010101'));
-        $this->response(array('code'=>0, 'info'=>'', 'data'=>null), 'json');
+        if($Users->where(array('user_id'=>$user_id))->save(array('status'=>$status, 'token_timeout'=>'20170101010101'))) {
+            $this->response(array('code'=>0, 'info'=>'修改用户成功', 'data'=>null), 'json');
+	} else {
+	    $this->response(array('code'=>-1, 'info'=>'修改用户失败', 'data'=>null), 'json');
+	    
+	}
 
     }
 

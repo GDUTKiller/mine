@@ -280,6 +280,7 @@ class RoomsController extends RestController {
 
 	$Rooms = M('Rooms');
 	$Digs = M('Digs');
+	$Configs = M('Configs');
 	foreach($car_data as $k=>$v) {
 	    $tmp = $Digs->field('car_id,room_id')->where(array('car_id'=>$v, 'dig_status'=>1))->find();
 
@@ -301,8 +302,8 @@ class RoomsController extends RestController {
 
 		$car_type = $Cars->where(array('car_id'=>$v))->getField('car_type');
 		//房间原有金币
- 		$tmp['origin_room_count'] = 	C('ROOM_COUNT_' . $car_type);
-
+ 	        //$tmp['origin_room_count'] = 	C('ROOM_COUNT_' . $car_type);
+                $tmp['origin_room_count'] = $Configs->where(array('name'=>'room_count_'.$car_type))->getField('value');
 		if($tmp['room_id'] < 10000) {
 		    array_push($dig_data['zone0'], $tmp);
 		} elseif($tmp['room_id'] < 20000) {
@@ -378,7 +379,7 @@ class RoomsController extends RestController {
      */
     private function _refresh($room_id) {
 	$Rooms = M('Rooms');
-
+        $Configs = M('Configs');
 	$room_data = $Rooms->where(array('room_id'=>$room_id))->find();
 
 	//如果房间为空
@@ -389,8 +390,11 @@ class RoomsController extends RestController {
 	//现在时间的时间戳
 	$now_time = time(); 
 
+	//$room_refresh_interval = C('ROOM_REFRESH_INTERVAL');
+	$room_refresh_interval = $Configs->where(array('name'=>'room_refresh_interval'))->getField('value');
+
 	//当前时间减去上次刷新时间大于刷新间隔，则刷新
-	if( $now_time - strtotime($room_data['update_time']) >= C('ROOM_INTERVAL') ) {
+	if( $now_time - strtotime($room_data['update_time']) >= $room_refresh_interval) {
 	    $Cars = M('Cars');
 	    $Digs = M('Digs');
 	    $Users = M('Users');
@@ -414,7 +418,7 @@ class RoomsController extends RestController {
 	        $buff = $data[0]['buff'];
 	    }
 
-	    if($now_time - strtotime($update_time) < C('ROOM_REFRESH_INTERVAL') ) {
+	    if($now_time - strtotime($update_time) < $room_refresh_interval ) {
 	        $Rooms->rollback();
 	    } else {
 		//在此房间挖矿的矿车
@@ -434,7 +438,7 @@ class RoomsController extends RestController {
 		    $car_type = $car_data['car_type'];
 
 		    //该矿车挖矿次数，如刷新间隔为10分钟，上次刷新时间至今19分钟，则为一次
-		    $times = intval(floor(( $now_time - strtotime($dig_update) ) / C('ROOM_REFRESH_INTERVAL') )  ); 
+		    $times = intval(floor(( $now_time - strtotime($dig_update) ) / $room_refresh_interval)  ); 
 		    //如果挖矿次数为0，则跳过此次循环
 		    if($times == 0) continue;		    
 
@@ -450,6 +454,7 @@ class RoomsController extends RestController {
 		    } elseif($durability > 0 ) {
 			$rate = 0.2;
 		    } else {
+		        //矿车耐久度为0
 			$rate = 0;
 			$Rooms->where(array('room_id'=>$room_id))->find();
 			//房间人数减1
@@ -478,7 +483,9 @@ class RoomsController extends RestController {
 		    }
 
 		    //此次刷新，该矿车应当挖到的挖矿数量，为挖矿速率 乘以挖矿次数$times 乘以金币获取比例$rate 乘以$buff
-		    $dig_count = C('CAR_RATE_' . $car_type) * $times * $rate * $buff; 
+                    //C('CAR_RATE_' . $car_type) 
+	            $car_rate = $Configs->where(array('name'=>'car_rate_' . $car_type))->getField('value');
+		    $dig_count = (int) round($car_rate * $times * $rate * $buff); 
 		    //房间剩余金币
 	 	    $room_count = $Rooms->where(array('room_id'=>$room_id))->getField('room_count');		
 		    
@@ -488,14 +495,14 @@ class RoomsController extends RestController {
 			$dig_count = $room_count;
 
 			//此时挖矿次数需要重新计算
-		        $times = intval(ceil($dig_count / ($buff * $rate * C('CAR_RATE_' . $car_type) ) )); 
+		        $times = intval(ceil($dig_count / ($buff * $rate * $car_rate ) )); 
 
 			//设置房间金币为0 标志为真
 			$room_flag = true;
  		    }
 
 		    //挖矿的更新时间
-		    $dig_update = date('YmdHis', strtotime($dig_update) + $times * C('ROOM_REFRESH_INTERVAL'));
+		    $dig_update = date('YmdHis', strtotime($dig_update) + $times * $room_refresh_interval);
 
 		    //增加此次挖矿金币数量
 		    $Digs->where(array('room_id'=>$room_id, 'car_id'=>$car_id, 'dig_status'=>1))->setInc('dig_count', $dig_count) === false ? $trans_flag = false : 1;
@@ -504,8 +511,12 @@ class RoomsController extends RestController {
 
 		    //增加矿车挖矿金币
 		    $Cars->where(array('car_id'=>$car_id))->setInc('gold_count', $dig_count) === false ? $trans_flag = false : 1;
+
 		    //降低矿车耐久度
-		    $dec_durability = $times * C('CAR_DURABILITY_' . $car_type); //此次更新应当减少的耐久度
+                    //C('CAR_DURABILITY_' . $car_type) 
+                    $car_durability = $Configs->where(array('name'=>'car_durability_'.$car_type))->getField('value');
+		    //此次更新应当减少的耐久度，每次挖矿应当减少的耐久度，乘以挖矿次数，乘以金币获取比例
+		    $dec_durability = (int) round($times * $car_durability * $rate); 
 		    if($dec_durability > $durability) {
 			$dec_durability = $durability;
 		    }
@@ -545,7 +556,9 @@ class RoomsController extends RestController {
 		    }
 
 		    //设置房间金币数量，状态，人数
-		    $Rooms->where(array('room_id'=>$room_id))->save(array('room_count'=>C('ROOM_COUNT_' . $car_type), 'people_num'=>0, 'room_status'=>0)) === false ? $trans_flag = false : 1;
+		    //C('ROOM_COUNT_' . $car_type)
+                    $origin_room_count = $Configs->where(array('name'=>'room_count_'.$car_type))->getField('value');
+		    $Rooms->where(array('room_id'=>$room_id))->save(array('room_count'=>$origin_room_count , 'people_num'=>0, 'room_status'=>0)) === false ? $trans_flag = false : 1;
 		}
 
 		if($trans_flag === false) {
